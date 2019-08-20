@@ -8,7 +8,7 @@ Feature: Watchlist
 
   Scenario: Obtain a specific watchlist of a user
     Given The user has watchlist with id: default
-    When I call the API  with watchlist id: default
+    When I call the watchlist id: default
     Then I receive the watchlist with id: default
 
   Scenario: Create a new watchlist
