@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2461b80-35ad-4418-a307-4758b064e3c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Java/utils/PropertiesHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/utils/PropertiesHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="176">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,10 +176,10 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/marketdata.feature" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/Share.java" />
         <option value="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/RequestBuilder2.java" />
         <option value="$PROJECT_DIR$/src/test/Java/runner/Runner2.java" />
         <option value="$PROJECT_DIR$/src/test/Java/runner/Runner.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" />
       </list>
     </option>
   </component>
@@ -204,7 +201,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="240" />
     <option name="y" value="126" />
     <option name="width" value="1440" />
@@ -464,7 +461,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3562753" />
@@ -869,8 +866,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="176">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

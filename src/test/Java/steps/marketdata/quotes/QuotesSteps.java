@@ -33,11 +33,6 @@ public class QuotesSteps {
                 .extract()
                 .response();
 
-       List<Quotes> result = response.path("quotes.quote");
-       ObjectMapper mapper = new ObjectMapper();
-       TypeReference<List<Quotes>> typeReference = new TypeReference<List<Quotes>>() {};
-       String resultJson =mapper.writeValueAsString(result);
-       List<Quotes> quotes = mapper.readValue(resultJson, typeReference);
 
     }
 
