@@ -1,0 +1,745 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1246400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.721Z",
+        "line": 7,
+        "name": "Obtain quotes of the Market",
+        "description": "",
+        "id": "market-data;obtain-quotes-of-the-market",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.ClassCastException: java.util.HashMap cannot be cast to java.util.List\r\n\tat steps.marketdata.quotes.QuotesSteps.ICallTheQuotesWithSymbols(QuotesSteps.java:36)\r\n\tat ✽.I call the quotes with symbols: AAPL,VXX190517P00016000(file:src/test/resources/features/marketdata.feature:8)\r\n",
+              "duration": 4404138900,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I call the quotes with symbols: AAPL,VXX190517P00016000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AAPL,VXX190517P00016000",
+                  "offset": 32
+                }
+              ],
+              "location": "QuotesSteps.ICallTheQuotesWithSymbols(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I receive a list with only the called symbols",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1591300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.721Z",
+        "line": 11,
+        "name": "Post quotes to the market",
+        "description": "",
+        "id": "market-data;post-quotes-to-the-market",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 164700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I post quotes with symbols: AAPL,VXX190517P00016000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AAPL,VXX190517P00016000",
+                  "offset": 28
+                }
+              ],
+              "location": "QuotesSteps.IPostQuotesWithSymbols(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I receive a list of symbols quotes with only the symbols called",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24628600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 15,
+        "name": "Obtain quotes with an option chain",
+        "description": "",
+        "id": "market-data;obtain-quotes-with-an-option-chain",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I call quotes with symbol: VXX expiration date: 2019-05-17",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I receive quotes related to the symbol with the expiration date only",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24602200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 19,
+        "name": "Obtain quotes of options strikes prices",
+        "description": "",
+        "id": "market-data;obtain-quotes-of-options-strikes-prices",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "I call the options strikes with the symbol: VXX expiration date: 2019-05-17",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "I receive the strikes related to the symbol with the expiration date only",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 266000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 23,
+        "name": "Obtain the expiration dates of an option",
+        "description": "",
+        "id": "market-data;obtain-the-expiration-dates-of-an-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "I call the options expiration with symbol: VXX",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "I receive the expiration dates related to the symbol",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1876000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.713Z",
+        "line": 27,
+        "name": "Obtain historical pricing information",
+        "description": "",
+        "id": "market-data;obtain-historical-pricing-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "I call the historical with symbol: AAPL",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "I receive the historical pricing related to the symbol",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2382500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.713Z",
+        "line": 31,
+        "name": "Obtain time sales information",
+        "description": "",
+        "id": "market-data;obtain-time-sales-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "I call the time sales with symbol: AAPL",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "I receive time sales information related to the symbol",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24801900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 35,
+        "name": "Obtain intraday status",
+        "description": "",
+        "id": "market-data;obtain-intraday-status",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 36,
+            "name": "I call the clock",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "I receive information about the current day status",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24082400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 39,
+        "name": "Obtain market information of a month",
+        "description": "",
+        "id": "market-data;obtain-market-information-of-a-month",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "I call the calendar with month: 08",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "I receive information about the month status",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 382800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.713Z",
+        "line": 43,
+        "name": "Obtain information of a company",
+        "description": "",
+        "id": "market-data;obtain-information-of-a-company",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "I call a query for q: alphabet",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 45,
+            "name": "I receive information of the searched company",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 20140800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 47,
+        "name": "Search for symbols",
+        "description": "",
+        "id": "market-data;search-for-symbols",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 48,
+            "name": "I call the symbol for q: goog",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 49,
+            "name": "I receive information about the searched symbol",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Market data",
+    "description": "  The API shows different information about Market Data",
+    "id": "market-data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/marketdata.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-08-21T16:26:14.723Z",
+        "line": 4,
+        "name": "Obtain watchlist of a user",
+        "description": "",
+        "id": "watchlist;obtain-watchlist-of-a-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "The user has watchlist",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I call the API  with watchlist",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I receive a list of watchlist",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.743Z",
+        "line": 9,
+        "name": "Obtain a specific watchlist of a user",
+        "description": "",
+        "id": "watchlist;obtain-a-specific-watchlist-of-a-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "The user has watchlist with id: default",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I call the watchlist id: default",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I receive the watchlist with id: default",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.743Z",
+        "line": 14,
+        "name": "Create a new watchlist",
+        "description": "",
+        "id": "watchlist;create-a-new-watchlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I want to create a new watchlist",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I call the API  with watchlist name: My Watchlist",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "symbols: AAPL,IBM,NFLX",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I receive the new watchlist with symbols added",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-08-21T16:26:14.733Z",
+        "line": 20,
+        "name": "Update an existing watchlist",
+        "description": "",
+        "id": "watchlist;update-an-existing-watchlist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "The user has watchlist",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "Ical the API",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Watchlist",
+    "description": "  The API shows different information about Watchlist",
+    "id": "watchlist",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/watchlist.feature",
+    "tags": []
+  }
+]

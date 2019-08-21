@@ -1,7 +1,6 @@
 package steps.marketdata.quotes;
 
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import cucumber.api.java.en.When;
@@ -24,7 +23,7 @@ public class QuotesSteps {
     public void ICallTheQuotesWithSymbols(String symbols) throws IOException {
 
         RequestBuilder requestBuilder = new RequestBuilder("markets","quotes");
-        RequestSpecification requestSpecification =requestBuilder.getRequestSpecification();
+        RequestSpecification requestSpecification = requestBuilder.getRequestSpecification();
         Response response = given().queryParam("symbols", symbols)
                 .spec(requestSpecification)
                 .get()
@@ -39,7 +38,6 @@ public class QuotesSteps {
        TypeReference<List<Quotes>> typeReference = new TypeReference<List<Quotes>>() {};
        String resultJson =mapper.writeValueAsString(result);
        List<Quotes> quotes = mapper.readValue(resultJson, typeReference);
-//          Share.setShare("qoutesResponse",qoutes);
 
     }
 

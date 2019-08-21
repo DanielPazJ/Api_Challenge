@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b2461b80-35ad-4418-a307-4758b064e3c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Java/utils/PropertiesHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/utils/PropertiesHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,29 +29,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="40" column="73" lean-forward="true" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+            <state relative-caret-position="-11">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/utils/Share.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,17 +49,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="357">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/Quotes.java">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/utils/Share.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="289">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,17 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Java/runner/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/lookup/LookupSteps.java">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/Quotes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="396">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -117,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Java/utils/RequestBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+            <state relative-caret-position="80">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/test/resoruces/marketdata.feature" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/timesales/TimeSalesSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resoruces/config/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/utils.java" />
         <option value="$PROJECT_DIR$/src/test/Java/runner/ParallelTest.java" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/PropiertiesHelper.java" />
@@ -168,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/account.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/trading.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/user.feature" />
-        <option value="$PROJECT_DIR$/src/test/Java/runner/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config/config.properties" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java" />
@@ -181,8 +177,12 @@
         <option value="$PROJECT_DIR$/src/test/Java/utils/RequestBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/GeneralMarketDataSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/marketdata.feature" />
-        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/Share.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/entities/Quotes.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/utils/RequestBuilder2.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/runner/Runner2.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/runner/Runner.java" />
       </list>
     </option>
   </component>
@@ -192,6 +192,17 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="APIChallenge" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
@@ -207,8 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,10 +322,16 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Runner">
+  <component name="RunManager" selected="TestNG.Runner2">
     <configuration name="QuotesSteps.ICallTheQuotesWithSymbols" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIChallenge" />
       <extension name="coverage">
@@ -389,7 +404,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Runner" />
+        <item itemvalue="TestNG.Runner2" />
         <item itemvalue="TestNG.QuotesSteps.ICallTheQuotesWithSymbols" />
       </list>
     </recent_temporary>
@@ -408,15 +423,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Runner - 2019.08.21 at 04h 49m 08s.xml">
-      <configuration name="Runner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Runner - 2019.08.21 at 08h 44m 01s.xml">
-      <configuration name="Runner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Runner - 2019.08.21 at 08h 51m 49s.xml">
-      <configuration name="Runner" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Runner - 2019.08.21 at 08h 55m 43s.xml">
       <configuration name="Runner" configurationId="TestNG" />
     </history-entry>
@@ -438,6 +444,15 @@
     <history-entry file="Runner - 2019.08.21 at 09h 21m 12s.xml">
       <configuration name="Runner" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Runner - 2019.08.21 at 11h 23m 13s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner2 - 2019.08.21 at 11h 24m 55s.xml">
+      <configuration name="Runner2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Runner - 2019.08.21 at 11h 26m 19s.xml">
+      <configuration name="Runner" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -452,7 +467,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34412956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3562753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -461,7 +476,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.330373" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.330373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4858681" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,12 +484,12 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.19538188" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.4866785" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32955465" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -529,9 +544,6 @@
     <entry file="file://$PROJECT_DIR$/target/jsonReports/cucumber.json" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/trading.feature" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/user.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/account.feature" />
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/4.7.1/cucumber-core-4.7.1.jar!/cucumber/runner/TimeService.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,17 +786,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/lookup/LookupSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/marketdata.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="357">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/utils/Share.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/entities/Quotes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="396">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/history/HistorySteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/utils/RequestBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,60 +862,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/runner/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/lookup/LookupSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/history/HistorySteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/utils/RequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/marketdata.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/utils/Share.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="40" column="73" lean-forward="true" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+        <state relative-caret-position="-11">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
