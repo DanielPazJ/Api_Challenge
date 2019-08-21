@@ -1,14 +1,18 @@
 package steps.marketdata.quotes;
 
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import cucumber.api.java.en.When;
+
 import entities.Quotes;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.Test;
-import utils.PropertiesHelper;
 import utils.RequestBuilder;
 
+
+import java.io.IOException;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
@@ -17,7 +21,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 public class QuotesSteps {
 
     @When("I call the quotes with symbols: ([^\"]*)")
-    public void ICallTheQuotesWithSymbols(String symbols){
+    public void ICallTheQuotesWithSymbols(String symbols) throws IOException {
 
         RequestBuilder requestBuilder = new RequestBuilder("markets","quotes");
         RequestSpecification requestSpecification =requestBuilder.getRequestSpecification();
@@ -30,11 +34,12 @@ public class QuotesSteps {
                 .extract()
                 .response();
 
-
-//        List<Quotes> result = response.path("quotes.quote");
-//        ObjectMapper mapper = new ObjectMapper();
-//        String resultJson =
-//         = mapper.readValue();
+       List<Quotes> result = response.path("quotes.quote");
+       ObjectMapper mapper = new ObjectMapper();
+       TypeReference<List<Quotes>> typeReference = new TypeReference<List<Quotes>>() {};
+       String resultJson =mapper.writeValueAsString(result);
+       List<Quotes> quotes = mapper.readValue(resultJson, typeReference);
+//          Share.setShare("qoutesResponse",qoutes);
 
     }
 
