@@ -32,11 +32,6 @@ Feature: Market data
     When I call the time sales with symbol: AAPL
     Then I receive time sales information related to the symbol
 
-    #Not in sandbox
-  Scenario: Obtain ETB information
-    When I call ETB list
-    Then I receive an ETB list
-
   Scenario: Obtain intraday status
     When I call the clock
     Then I receive information about the current day status

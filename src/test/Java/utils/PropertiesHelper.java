@@ -9,7 +9,7 @@ public class PropertiesHelper {
 
     private static String token= null;
 
-    public static String testtoken() {
+    public static String Token() {
         try {
             InputStream fileInput = new FileInputStream("src/test/resources/config/config.properties");
             Properties properties = new Properties();
@@ -21,20 +21,5 @@ public class PropertiesHelper {
         }
         return token;
     }
-
-    public  String getToken(){
-
-        try {
-            InputStream fileInput = new FileInputStream("src/test/resources/config/config.properties");
-            Properties properties = new Properties();
-            properties.load(fileInput);
-            token = properties.getProperty("token");
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        return token;
-    }
-
 
 }
