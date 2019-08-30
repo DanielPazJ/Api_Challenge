@@ -5,7 +5,7 @@ Feature: Market data
     Given I have an authorization token
 
   Scenario: Obtain quotes of the Market
-    When I call the quotes with symbols: AAPL,VXX190517P00016000
+    When I call the quotes with symbols: DIS,VXX
     Then I receive a list with only the called symbols
 
   Scenario: Post quotes to the market
