@@ -7,7 +7,6 @@ public class Share {
     private static ThreadLocal<Map<String, Object>> shareMaps = ThreadLocal.withInitial(HashMap::new);
 
     public Share() {
-
     }
 
     public static void setShare (String key, Object value){

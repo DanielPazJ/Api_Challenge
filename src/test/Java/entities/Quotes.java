@@ -7,4 +7,10 @@ public class Quotes {
 
     @JsonProperty("quote")
     private List<Quote> quote;
+
+    public List<Quote> getQuote() {
+        return quote;
+    }
 }
+
+
