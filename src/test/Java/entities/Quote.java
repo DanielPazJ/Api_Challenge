@@ -63,6 +63,10 @@ public class Quote {
         return symbol;
     }
 
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
     public String getDescription() {
         return description;
     }

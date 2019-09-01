@@ -13,8 +13,11 @@ public class AssertQuotesSteps {
     @Then("I receive a list with only the called symbols")
     public void iReceiveAListWithOnlyTheCalledSymbols() {
         List<Quote> quotes= Share.getShare("quotes");
-        List<Quote> quoteResponse = ((QuotesResponse)Share.getShare("quotesResponds")).getQuotes().getQuote();
+        List<Quote> quoteResponse = ((QuotesResponse)Share.getShare("quotesResponse")).getQuotes().getQuote();
 
-       // assertThat(quotes.get().getSymbol(), equalTo(quoteResponse.getSymbol()));
+        for (int i =0; i<quotes.size();i++)
+            assertThat(quotes.get(i).getSymbol(), equalTo(quoteResponse.get(i).getSymbol()));
     }
+       // assertThat(quotes.get().getSymbol(), equalTo(quoteResponse.getSymbol()));
+
 }

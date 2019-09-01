@@ -8,12 +8,13 @@ import entities.Quote;
 import entities.QuotesResponse;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import utils.MapperHelper;
-import utils.RequestBuilder;
-import utils.ResponseBuilder;
+import utils.*;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_OK;
 
@@ -21,6 +22,15 @@ public class QuotesSteps {
 
     @When("I call the quotes with symbols: ([^\"]*)")
     public void iCallTheQuotesWithSymbols(String symbols) throws IOException {
+
+        String[] symbolsList = symbols.split(",");
+        List<Quote> quotes = new ArrayList<>();
+        for (String symbol : symbolsList){
+            Quote quote = new Quote();
+            quote = QuotesHelper.createQuoteSymbol(quote,symbol);
+            quotes.add(quote);
+        }
+        Share.setShare("quotes",quotes);
 
         RequestBuilder requestBuilder = new RequestBuilder("markets","quotes");
         RequestSpecification requestSpecification = requestBuilder.getRequestSpecification();
