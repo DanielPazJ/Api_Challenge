@@ -4,21 +4,40 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
+import java.util.HashMap;
+
 public class RequestBuilder {
 
-    private RequestSpecBuilder requestSpecBuilder;
-    private RequestSpecification requestSpecification;
+    private RequestSpecBuilder requestSpecBuilder  = new RequestSpecBuilder();
 
-    public RequestBuilder(String basePath, String path) {
-        requestSpecBuilder = new RequestSpecBuilder()
+    public RequestBuilder(){
+        this.requestSpecBuilder
                 .setBaseUri("https://sandbox.tradier.com/v1")
-                .setBasePath(basePath + "/" + path)
-                .addHeader("Authorization", "Bearer " + PropertiesHelper.Token())
-                .setAccept(ContentType.JSON);
-        requestSpecification = requestSpecBuilder.build();
+                .setAccept(ContentType.JSON)
+                .addHeader("Authorization", "Bearer " + Share.getShare("token"));
     }
 
-    public RequestSpecification getRequestSpecification() {
-        return requestSpecification;
+    public RequestBuilder withBasePath(String basePath){
+        this.requestSpecBuilder.setBasePath(basePath);
+        return this;
+    }
+
+    public RequestBuilder withContentType(ContentType contentType){
+        this.requestSpecBuilder.setContentType(contentType);
+        return this;
+    }
+
+    public RequestBuilder withContentParams(HashMap<String, String> content){
+        this.requestSpecBuilder.addParams(content);
+        return this;
+    }
+
+    public RequestBuilder withQueryParams(HashMap<String, String> content){
+        this.requestSpecBuilder.addQueryParams(content);
+        return this;
+    }
+
+    public RequestSpecification build(){
+        return this.requestSpecBuilder.build();
     }
 }

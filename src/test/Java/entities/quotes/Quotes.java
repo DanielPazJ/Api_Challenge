@@ -1,6 +1,7 @@
-package entities;
+package entities.quotes;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Quotes {

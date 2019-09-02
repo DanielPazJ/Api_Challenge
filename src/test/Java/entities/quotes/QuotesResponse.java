@@ -1,4 +1,4 @@
-package entities;
+package entities.quotes;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

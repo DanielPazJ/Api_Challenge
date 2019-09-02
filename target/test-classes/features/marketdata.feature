@@ -9,11 +9,11 @@ Feature: Market data
     Then I receive a list with only the called symbols
 
   Scenario: Post quotes to the market
-    When I post quotes with symbols: AAPL,VXX190517P00016000
-    Then I receive a list of symbols quotes with only the symbols called
+    When I post quotes with symbols: AAPL,VXX
+    Then I receive a list with only the called symbols
 
   Scenario: Obtain quotes with an option chain
-    When I call quotes with symbol: VXX expiration date: 2019-05-17
+    When I call quotes with symbol: VXX expiration date: 2019-09-13
     Then I receive quotes related to the symbol with the expiration date only
 
   Scenario: Obtain quotes of options strikes prices

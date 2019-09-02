@@ -1,8 +1,8 @@
-package entities.quotes;
+package entities.options;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Quote {
+public class Option {
 
     @JsonProperty("symbol")
     private String symbol;
@@ -56,14 +56,39 @@ public class Quote {
     private String askexch;
     @JsonProperty("ask_date")
     private long askDate;
-    @JsonProperty("root_symbols")
-    private String rootSymbols;
+    @JsonProperty("root_symbol")
+    private String rootSymbol;
+    @JsonProperty("underlying")
+    private String underlying;
+    @JsonProperty("strike")
+    private float strike;
+    @JsonProperty("open_interest")
+    private int openInterest;
+    @JsonProperty("contract_size")
+    private int contractSize;
+    @JsonProperty("expiration_date")
+    private String expirationDate;
+    @JsonProperty("expiration_type")
+    private String expirationType;
+    @JsonProperty("option_type")
+    private String optionType;
 
-    public String getSymbol() {
-        return symbol;
+    public String getExpirationDate() {
+        return expirationDate;
     }
 
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
+    public void setExpirationDate(String expirationDate) {
+        this.expirationDate = expirationDate;
     }
+
+    public String getRootSymbol() {
+        return rootSymbol;
+    }
+
+    public void setRootSymbol(String rootSymbol) {
+        this.rootSymbol = rootSymbol;
+    }
+
+
+
 }
