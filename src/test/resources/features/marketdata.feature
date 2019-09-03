@@ -4,25 +4,45 @@ Feature: Market data
   Background:
     Given I have an authorization token
 
-  Scenario: Obtain quotes of the Market
-    When I call the quotes with symbols: DIS,VXX
+  Scenario Outline: Obtain quotes of the Market
+    Given In the market exist <symbols>
+    When I call the quotes with <symbols>
     Then I receive a list with only the called symbols
+    Examples:
+      | symbols |
+      |    DIS,VXX  |
+      |    VXX  |
 
   Scenario: Post quotes to the market
     When I post quotes with symbols: AAPL,VXX
     Then I receive a list with only the called symbols
 
-  Scenario: Obtain quotes with an option chain
-    When I call quotes with symbol: VXX expiration date: 2019-09-13
+  Scenario Outline: Obtain quotes with an option chain
+    Given I have an option chain of <symbol> with expiration date: <date>
+    When I call quotes with symbol: <symbol> expiration date: <date>
     Then I receive quotes related to the symbol with the expiration date only
 
-  Scenario: Obtain quotes of options strikes prices
-    When I call the options strikes with the symbol: DIS expiration date: 2019-09-20
+    Examples:
+      |symbol|date|
+      |VXX|2019-09-13|
+
+  Scenario Outline: Obtain quotes of options strikes prices
+    Given I have an option strikes of <symbol> with expiration date: <date>
+    When I call the options strikes with the symbol: <symbol> expiration date: <date>
     Then I receive the strikes related to the symbol with the expiration date only
 
-  Scenario: Obtain the expiration dates of an option
-    When I call the options expiration with symbol: VXX
-    Then I receive the expiration dates related to the symbol
+    Examples:
+      |symbol|date|
+      |DIS|2019-09-20|
+
+  Scenario Outline: Obtain the expiration dates of an option
+    Given The <symbol> exist in the market with <expiration date>
+    When I call the options expiration with <symbol>
+    Then I receive expiration dates with <expiration date>
+
+    Examples:
+      | symbol  | expiration date |
+      |    VXX  |   2019-09-06    |
 
   Scenario: Obtain historical pricing information
     When I call the historical with symbol: AC

@@ -29,15 +29,14 @@ public class AssertOptionsSteps {
     public void iReceiveTheStrikesRelatedToTheSymbolWithTheExpirationDateOnly() {
         Strike strike = Share.getShare("strike");
         Double[] strikeResponse = ((Strikes)Share.getShare("strikesResponse")).getStrikes().getStrike();
-
         assertThat(strike.getStrike()[0], equalTo(strikeResponse[0]));
 }
 
-    @Then("I receive the expiration dates related to the symbol")
-    public void iReceiveTheExpirationDatesRelatedToTheSymbol() {
-        Date expirationDate = Share.getShare("expiration");
+    @Then("I receive expiration dates with ([^\"]*)")
+    public void iReceiveExpirationDates(String expirationDate) {
+ //       Date expirationDate = Share.getShare("expiration");
         String[] expirationDateResponse = ((Expirations)Share.getShare("expirationsResponse")).getDates().getExpirations();
-
-        assertThat(expirationDate.getExpirations()[0], equalTo(expirationDateResponse[0]));
+//        assertThat(expirationDate.getExpirations()[0], equalTo(expirationDateResponse[0]));
+        assertThat(expirationDate,equalTo(expirationDateResponse[0]));
     }
 }

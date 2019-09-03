@@ -1,7 +1,7 @@
 package steps.marketdata;
 
 import cucumber.api.java.en.Given;
-import utils.PropertiesHelper;
+import helpers.PropertiesHelper;
 import utils.Share;
 
 public class GeneralMarketDataSteps {

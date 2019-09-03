@@ -32,8 +32,8 @@ public class RequestBuilder {
         return this;
     }
 
-    public RequestBuilder withQueryParams(HashMap<String, String> content){
-        this.requestSpecBuilder.addQueryParams(content);
+    public RequestBuilder withQueryParams (String key,String content){
+        this.requestSpecBuilder.addQueryParam(key,content);
         return this;
     }
 

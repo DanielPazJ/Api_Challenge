@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 7.497 sec <<< FAILURE! - in runner.Runner
+runScenario(runner.Runner)  Time elapsed: 0.077 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: "2019-09-03T09:30:00"
+     but: was "2019-08-30T16:02:00"
+

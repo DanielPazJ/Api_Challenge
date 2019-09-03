@@ -19,7 +19,6 @@ public class AssertHistorySteps {
         Day historicalDate = Share.getShare("historicalDay");
         List<Day> historicalResponse = ((HistoryResponse)Share.getShare("historyResponse")).getDates().getDays();
         assertThat(historicalDate.getDate(), equalTo(historicalResponse.get(0).getDate()));
-
     }
 }
 

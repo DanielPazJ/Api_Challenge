@@ -1,14 +1,46 @@
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\entities\Quotes.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\clock\ClockSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\calendar\CalendarSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\utils\RequestBuilder.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\search\SearchSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\options\OptionsSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\timesales\TimeSalesSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\lookup\LookupSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\GeneralMarketDataSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\history\HistorySteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\steps\marketdata\quotes\QuotesSteps.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\utils\PropertiesHelper.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\runner\ParallelTest.java
-C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\java\runner\Runner.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\securities\Security.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\options\OptionsResponse.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\timeSales\Series.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\search\SearchSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\clock\Clock.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\helpers\OptionsHelper.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\runner\Runner.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\history\AssertHistorySteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\historicalDates\History.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\securities\Securities.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\quotes\QuotesSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\helpers\PropertiesHelper.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\quotes\Quotes.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\expirations\Date.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\clock\ClockSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\calendar\CalendarSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\clock\AssertClockSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\options\OptionsSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\quotes\Quote.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\timesales\TimeSalesSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\helpers\TimesSalesHelper.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\options\Option.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\quotes\QuotesResponse.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\GeneralMarketDataSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\quotes\AssertQuotesSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\historicalDates\Day.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\strikes\Strikes.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\helpers\MapperHelper.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\utils\RequestBuilder.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\options\Options.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\timeSales\Data.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\history\HistorySteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\timesales\AssertTimeSalesSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\search\AssertSearchSteps.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\expirations\Expirations.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\historicalDates\HistoryResponse.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\utils\Share.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\securities\SecuritiesResponse.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\timeSales\TimeSalesResponse.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\runner\ParallelTest.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\utils\ResponseBuilder.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\clock\ClockResponse.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\helpers\HistoryDatesHelper.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\entities\strikes\Strike.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\helpers\QuotesHelper.java
+C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\java\steps\marketdata\options\AssertOptionsSteps.java
