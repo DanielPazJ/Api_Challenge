@@ -10,8 +10,7 @@ Feature: Market data
     Then I receive a list with only the called symbols
     Examples:
       | symbols |
-      |    DIS,VXX  |
-      |    VXX  |
+      | DIS,VXX |
 
   Scenario: Post quotes to the market
     When I post quotes with symbols: AAPL,VXX
@@ -23,8 +22,8 @@ Feature: Market data
     Then I receive quotes related to the symbol with the expiration date only
 
     Examples:
-      |symbol|date|
-      |VXX|2019-09-13|
+      | symbol | date       |
+      | VXX    | 2019-09-13 |
 
   Scenario Outline: Obtain quotes of options strikes prices
     Given I have an option strikes of <symbol> with expiration date: <date>
@@ -32,8 +31,8 @@ Feature: Market data
     Then I receive the strikes related to the symbol with the expiration date only
 
     Examples:
-      |symbol|date|
-      |DIS|2019-09-20|
+      | symbol | date       |
+      | DIS    | 2019-09-20 |
 
   Scenario Outline: Obtain the expiration dates of an option
     Given The <symbol> exist in the market with <expiration date>
