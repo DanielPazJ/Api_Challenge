@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Strikes {
     @JsonProperty("strikes")
-    private Strikes strikes;
+    private Strike strikes;
 
-    public Strikes getStrikes() {
+    public Strike getStrikes() {
         return strikes;
     }
 }

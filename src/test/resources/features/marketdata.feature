@@ -17,7 +17,7 @@ Feature: Market data
     Then I receive quotes related to the symbol with the expiration date only
 
   Scenario: Obtain quotes of options strikes prices
-    When I call the options strikes with the symbol: VXX expiration date: 2019-05-17
+    When I call the options strikes with the symbol: DIS expiration date: 2019-09-20
     Then I receive the strikes related to the symbol with the expiration date only
 
   Scenario: Obtain the expiration dates of an option
@@ -25,11 +25,11 @@ Feature: Market data
     Then I receive the expiration dates related to the symbol
 
   Scenario: Obtain historical pricing information
-    When I call the historical with symbol: AAPL
+    When I call the historical with symbol: AC
     Then I receive the historical pricing related to the symbol
 
   Scenario: Obtain time sales information
-    When I call the time sales with symbol: AAPL
+    When I call the time sales with symbol: AC
     Then I receive time sales information related to the symbol
 
   Scenario: Obtain intraday status

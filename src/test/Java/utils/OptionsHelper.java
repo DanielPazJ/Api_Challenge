@@ -1,5 +1,6 @@
 package utils;
 
+import entities.expirations.Date;
 import entities.options.Option;
 import entities.strikes.Strike;
 
@@ -14,8 +15,16 @@ public class OptionsHelper {
 
     public Strike createOptionStrike(){
         Strike strike = new Strike();
-        strike.getStrike()[0]= 45.7;
+        Double[] strikeContent= {60.0};
+        strike.setStrike(strikeContent);
         return strike;
+    }
+
+    public Date createOptionExpiration(){
+        Date date = new Date();
+        String[] dateContent= {"2019-09-06"};
+        date.setExpirations(dateContent);
+        return date;
     }
 
 }

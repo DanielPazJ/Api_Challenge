@@ -10,4 +10,7 @@ public class Strike {
     public Double[] getStrike() {
         return strike;
     }
+    public void setStrike(Double[] strike) {
+        this.strike = strike;
+    }
 }

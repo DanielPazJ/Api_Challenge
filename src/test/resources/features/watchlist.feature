@@ -2,8 +2,8 @@ Feature: Watchlist
   The API shows different information about Watchlist
 
   Scenario: Obtain watchlist of a user
-    Given The user has watchlist
-    When I call the API  with watchlist
+    Given The user has a watchlist
+    When I call the API with watchlist
     Then I receive a list of watchlist
 
   Scenario: Obtain a specific watchlist of a user
