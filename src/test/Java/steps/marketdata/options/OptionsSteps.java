@@ -10,11 +10,19 @@ import entities.options.Option;
 import entities.options.OptionsResponse;
 import entities.strikes.Strike;
 import entities.strikes.Strikes;
+import helpers.PropertiesHelper;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import steps.marketdata.BaseSteps;
 import utils.*;
 
-public class OptionsSteps {
+public class OptionsSteps extends BaseSteps {
+
+    private PropertiesHelper propertiesHelper = new PropertiesHelper();
+    private String marketOptionsPath = marketPath + propertiesHelper.getProperty("MARKET_OPTIONS_PATH");
+    private String marketChain = propertiesHelper.getProperty("MARKET_CHAIN_PATH");
+    private String marketStrike = propertiesHelper.getProperty("MARKET_STRIKE_PATH");
+    private String marketExpiration = propertiesHelper.getProperty("MARKET_EXPIRATION_PATH");
 
     @Given("I have an option chain of ([^\"]*) with expiration date: ([^\"]*)")
     public void iHaveAnOptionChainOfSymbolWithExpirationDateDate(String symbol, String date) {
@@ -25,10 +33,10 @@ public class OptionsSteps {
     @When("I call quotes with symbol: ([^\"]*) expiration date: ([^\"]*)")
     public void ICallQuotesWithSymbolAndExpirationDate(String symbol, String date){
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("markets/options/chains")
+                .withBasePath(marketOptionsPath+marketChain)
                 .withQueryParams("symbol", symbol)
                 .withQueryParams("expiration",date).build();
-        Response response = ResponseBuilder.getResponse(request,"get");
+        Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"optionsResponse", OptionsResponse.class);
 
     }
@@ -42,11 +50,11 @@ public class OptionsSteps {
     @When("I call the options strikes with the symbol: ([^\"]*) expiration date: ([^\"]*)")
     public void ICallTheOptionsStrikesWithTheSymbolAndExpirationDate(String symbol, String date){
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("markets/options/strikes")
+                .withBasePath(marketOptionsPath+marketStrike)
                 .withQueryParams("symbol", symbol)
                 .withQueryParams("expiration",date).build();
 
-        Response response = ResponseBuilder.getResponse(request,"get");
+        Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"strikesResponse", Strikes.class);
     }
 
@@ -59,10 +67,10 @@ public class OptionsSteps {
     @When("I call the options expiration with ([^\"]*)")
     public void ICallTheOptionsExpirationWithSymbol (String symbol){
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("markets/options/expirations")
+                .withBasePath(marketOptionsPath+marketExpiration)
                 .withQueryParams("symbol", symbol).build();
 
-        Response response = ResponseBuilder.getResponse(request,"get");
+        Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"expirationsResponse", Expirations.class);
 
     }

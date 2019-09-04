@@ -24,7 +24,7 @@ Feature: Market data
 
     Examples:
       | symbol | date       |
-      | VXX    | 2019-09-13 |
+      | VXX    | 2019-09-20 |
 
   Scenario Outline: Obtain quotes of options strikes prices
     Given I have an option strikes of <symbol> with expiration date: <date>
@@ -86,4 +86,4 @@ Feature: Market data
 
     Examples:
       | month | year |
-      | 3    | 2019     |
+      | 3     | 2019 |

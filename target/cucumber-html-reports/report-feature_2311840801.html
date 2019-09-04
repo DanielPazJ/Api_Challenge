@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Automation Report</td>
               <td>1</td>
-            <td>03 Sep 2019, 12:08</td>
+            <td>04 Sep 2019, 09:30</td>
     </tr>
   </tbody>
 </table>
@@ -130,18 +130,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Market data</td>
-          <td      class="passed"    >39</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >32</td>
+          <td      class="failed"    >5</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
-          <td   class="undefined" >1</td>
           <td class="total">41</td>
 
-          <td  class="passed"    >10</td>
-          <td  class="failed"    >2</td>
-          <td class="total">12</td>
+          <td  class="passed"    >6</td>
+          <td  class="failed"    >5</td>
+          <td class="total">11</td>
 
-          <td class="duration" data-value="41558585700">41.558</td>
+          <td class="duration" data-value="43845697600">43.845</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -192,7 +192,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.100</span>
+  <span class="lead-duration duration">0.118</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -233,7 +233,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.100</span>
+  <span class="lead-duration duration">0.118</span>
 
 </div>
 
@@ -269,12 +269,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4.008</span>
+  <span class="lead-duration duration">3.858</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Obtain quotes of the Market</span>
   
@@ -285,15 +285,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -303,14 +303,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">In the market exist <span class="argument">DIS,VXX</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -331,17 +331,74 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
   <span class="name">I call the quotes with <span class="argument">DIS,VXX</span></span>
   
-  <span class="lead-duration duration">4.006</span>
+  <span class="lead-duration duration">3.845</span>
 
 </div>
 
         
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$5.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:156)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.ResponseCreator.getBaseResponse(ResponseCreator.java:15)
+	at utils.ResponseCreator.createGetResponse(ResponseCreator.java:22)
+	at utils.ResponseFactory.createResponse(ResponseFactory.java:12)
+	at steps.marketdata.quotes.QuotesSteps.iCallTheQuotesWithSymbols(QuotesSteps.java:37)
+	at &#10045;.I call the quotes with DIS,VXX(file:src/test/resources/features/marketdata.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -356,7 +413,7 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I receive a list with only the called symbols</span>
   
@@ -396,10 +453,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.102</span>
+  <span class="lead-duration duration">0.040</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -412,13 +469,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -430,14 +487,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.102</span>
+  <span class="lead-duration duration">0.040</span>
 
 </div>
 
@@ -473,14 +530,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">3.972</span>
+  <span class="lead-duration duration">3.866</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
     
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Obtain quotes of the Market</span>
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post quotes to the market</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -489,15 +546,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-8" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -507,45 +564,75 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">In the market exist <span class="argument">VXX</span></span>
-  
-  <span class="lead-duration duration">0.004</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
-  <span class="name">I call the quotes with <span class="argument">VXX</span></span>
+  <span class="name">I post quotes with symbols: <span class="argument">AAPL,VXX</span></span>
   
-  <span class="lead-duration duration">3.967</span>
+  <span class="lead-duration duration">3.866</span>
 
 </div>
 
         
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$5.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.ResponseCreator.getBaseResponse(ResponseCreator.java:15)
+	at utils.ResponseCreator.createPostResponse(ResponseCreator.java:29)
+	at utils.ResponseFactory.createResponse(ResponseFactory.java:15)
+	at steps.marketdata.quotes.QuotesSteps.iPostQuotesWithSymbols(QuotesSteps.java:53)
+	at &#10045;.I post quotes with symbols: AAPL,VXX(file:src/test/resources/features/marketdata.feature:17)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -560,7 +647,7 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I receive a list with only the called symbols</span>
   
@@ -600,91 +687,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.099</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-9" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-10" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I have an authorization token</span>
-  
-  <span class="lead-duration duration">0.099</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">3.995</span>
+  <span class="lead-duration duration">0.027</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Post quotes to the market</span>
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -715,112 +725,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I post quotes with symbols: <span class="argument">AAPL,VXX</span></span>
-  
-  <span class="lead-duration duration">3.995</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I receive a list with only the called symbols</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">0.099</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-13" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.099</span>
+  <span class="lead-duration duration">0.027</span>
 
 </div>
 
@@ -856,12 +764,12 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4.040</span>
+  <span class="lead-duration duration">3.878</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Obtain quotes with an option chain</span>
   
@@ -872,15 +780,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -890,14 +798,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-16" class="inner-level collapse collapsable-details ">
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I have an option chain of <span class="argument">VXX</span> with expiration date: <span class="argument">2019-09-13</span></span>
+  <span class="name">I have an option chain of <span class="argument">VXX</span> with expiration date: <span class="argument">2019-09-20</span></span>
   
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.109</span>
 
 </div>
 
@@ -918,17 +826,72 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">When</span>
-  <span class="name">I call quotes with symbol: <span class="argument">VXX</span> expiration date: <span class="argument">2019-09-13</span></span>
+  <span class="name">I call quotes with symbol: <span class="argument">VXX</span> expiration date: <span class="argument">2019-09-20</span></span>
   
-  <span class="lead-duration duration">4.034</span>
+  <span class="lead-duration duration">3.769</span>
 
 </div>
 
         
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$5.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.ResponseCreator.getBaseResponse(ResponseCreator.java:15)
+	at utils.ResponseCreator.createGetResponse(ResponseCreator.java:22)
+	at utils.ResponseFactory.createResponse(ResponseFactory.java:12)
+	at steps.marketdata.options.OptionsSteps.ICallQuotesWithSymbolAndExpirationDate(OptionsSteps.java:38)
+	at &#10045;.I call quotes with symbol: VXX expiration date: 2019-09-20(file:src/test/resources/features/marketdata.feature:22)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -943,7 +906,7 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I receive quotes related to the symbol with the expiration date only</span>
   
@@ -983,10 +946,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.101</span>
+  <span class="lead-duration duration">0.051</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -999,13 +962,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1017,14 +980,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-18" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.101</span>
+  <span class="lead-duration duration">0.051</span>
 
 </div>
 
@@ -1060,10 +1023,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4.007</span>
+  <span class="lead-duration duration">4.477</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1076,13 +1039,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details ">
+  <div id="element-18" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1094,14 +1057,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details ">
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have an option strikes of <span class="argument">DIS</span> with expiration date: <span class="argument">2019-09-20</span></span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -1126,7 +1089,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I call the options strikes with the symbol: <span class="argument">DIS</span> expiration date: <span class="argument">2019-09-20</span></span>
   
-  <span class="lead-duration duration">4.004</span>
+  <span class="lead-duration duration">4.465</span>
 
 </div>
 
@@ -1187,10 +1150,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.108</span>
+  <span class="lead-duration duration">0.038</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -1203,13 +1166,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-20" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1221,14 +1184,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details ">
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.108</span>
+  <span class="lead-duration duration">0.038</span>
 
 </div>
 
@@ -1264,10 +1227,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">3.963</span>
+  <span class="lead-duration duration">4.490</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1280,13 +1243,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details ">
+  <div id="element-22" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1298,14 +1261,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-24" class="inner-level collapse collapsable-details ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">The <span class="argument">VXX</span> exist in the market with <span class="argument">2019-09-06</span></span>
   
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -1330,7 +1293,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I call the options expiration with <span class="argument">VXX</span></span>
   
-  <span class="lead-duration duration">3.958</span>
+  <span class="lead-duration duration">4.481</span>
 
 </div>
 
@@ -1391,10 +1354,10 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.104</span>
+  <span class="lead-duration duration">0.110</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -1407,13 +1370,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-25" class="collapse collapsable-details ">
+  <div id="element-24" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1425,14 +1388,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-26" class="inner-level collapse collapsable-details ">
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.104</span>
+  <span class="lead-duration duration">0.110</span>
 
 </div>
 
@@ -1468,13 +1431,13 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4.041</span>
+  <span class="lead-duration duration">4.517</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
     
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
   <span class="name">Obtain historical pricing information</span>
   
 
@@ -1484,15 +1447,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-26" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1502,14 +1465,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details ">
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call the historical with symbol: <span class="argument">AC</span></span>
+  <span class="keyword indention">Given</span>
+  <span class="name">In the market there is a <span class="argument">AC</span> with a transaction on the date <span class="argument">2019-01-02</span></span>
   
-  <span class="lead-duration duration">4.041</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1531,8 +1494,33 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I call the historical with <span class="argument">AC</span></span>
+  
+  <span class="lead-duration duration">4.514</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">I receive the historical pricing related to the symbol</span>
+  <span class="name">I receive the historical pricing related to the <span class="argument">AC</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -1541,6 +1529,20 @@ $(document).ready(function() {
         
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+          <a>java.lang.NullPointerException</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException
+	at steps.marketdata.history.AssertHistorySteps.iReceiveTheHistoricalPricingRelatedToTheSymbol(AssertHistorySteps.java:18)
+	at &#10045;.I receive the historical pricing related to the AC(file:src/test/resources/features/marketdata.feature:50)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -1570,7 +1572,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">0.098</span>
+  <span class="lead-duration duration">0.128</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
@@ -1611,7 +1613,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.098</span>
+  <span class="lead-duration duration">0.128</span>
 
 </div>
 
@@ -1647,14 +1649,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">4.028</span>
+  <span class="lead-duration duration">4.550</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Obtain time sales information</span>
+  <span class="name">Obtain time sales information of a specific symbol</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1663,13 +1665,192 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details  in ">
+  <div id="element-31" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I call the time sales with symbol: <span class="argument">AC</span></span>
+  
+  <span class="lead-duration duration">4.484</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I receive time sales information of the current day related to the symbol</span>
+  
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.038</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I have an authorization token</span>
+  
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">3.857</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-35">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Obtain intraday status</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-36">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1681,39 +1862,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call the time sales with symbol: <span class="argument">AC</span></span>
-  
-  <span class="lead-duration duration">4.026</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
+  <div id="steps-36" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I receive time sales information related to the symbol</span>
+  <span class="keyword indention">When</span>
+  <span class="name">I call the clock</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">3.857</span>
 
 </div>
 
@@ -1723,17 +1879,56 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-37">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-33" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expected: &quot;2019-09-03T09:30:00&quot;
-     but: was &quot;2019-08-30T16:02:00&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.marketdata.timesales.AssertTimeSalesSteps.iReceiveTimeSalesInformationRelatedToTheSymbol(AssertTimeSalesSteps.java:18)
-	at &#10045;.I receive time sales information related to the symbol(file:src/test/resources/features/marketdata.feature:53)
+      <div id="msg-37" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
+	at io.restassured.specification.ResponseSpecification$statusCode$5.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at utils.ResponseCreator.getBaseResponse(ResponseCreator.java:15)
+	at utils.ResponseCreator.createGetResponse(ResponseCreator.java:22)
+	at utils.ResponseFactory.createResponse(ResponseFactory.java:12)
+	at steps.marketdata.clock.ClockSteps.ICallTheClock(ClockSteps.java:20)
+	at &#10045;.I call the clock(file:src/test/resources/features/marketdata.feature:61)
 </pre>
       </div>
     </div>
@@ -1750,163 +1945,9 @@ Expected: &quot;2019-09-03T09:30:00&quot;
         
 
       </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">0.100</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-34" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-35" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I have an authorization token</span>
-  
-  <span class="lead-duration duration">0.100</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">3.985</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Obtain intraday status</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-36" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-37" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call the clock</span>
-  
-  <span class="lead-duration duration">3.985</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I receive information about the current day status</span>
   
@@ -1946,7 +1987,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </div>
 
   
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.125</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
@@ -1987,7 +2028,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.125</span>
 
 </div>
 
@@ -2023,14 +2064,14 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.490</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-40">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Obtain market information of a month</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Obtain information of a company</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2039,15 +2080,15 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </span>
   <div class="description indention"></div>
 
-  <div id="element-40" class="collapse collapsable-details  in ">
+  <div id="element-40" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-41">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -2057,14 +2098,14 @@ Expected: &quot;2019-09-03T09:30:00&quot;
 
   </div>
 
-  <div id="steps-41" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call the calendar with month: <span class="argument">08</span></span>
+  <span class="keyword indention">Given</span>
+  <span class="name">There exist content related to <span class="argument">alphabet</span></span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -2085,9 +2126,34 @@ Expected: &quot;2019-09-03T09:30:00&quot;
       </div>
           <div class="step">
         
-<div class="brief undefined">
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I call a query for q: <span class="argument">alphabet</span></span>
+  
+  <span class="lead-duration duration">4.478</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I receive information about the month status</span>
+  <span class="name">I receive information of the searched company</span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -2125,7 +2191,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.053</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
@@ -2166,7 +2232,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.053</span>
 
 </div>
 
@@ -2202,14 +2268,14 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </div>
 
   
-  <span class="lead-duration duration">4.043</span>
+  <span class="lead-duration duration">4.474</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-44">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Obtain information of a company</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Search for symbols</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2240,10 +2306,35 @@ Expected: &quot;2019-09-03T09:30:00&quot;
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call a query for q: <span class="argument">alphabet</span></span>
+  <span class="keyword indention">Given</span>
+  <span class="name">There are symbols related with <span class="argument">goog</span></span>
   
-  <span class="lead-duration duration">4.041</span>
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I call the symbol for q: <span class="argument">goog</span></span>
+  
+  <span class="lead-duration duration">4.465</span>
 
 </div>
 
@@ -2266,9 +2357,9 @@ Expected: &quot;2019-09-03T09:30:00&quot;
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I receive information of the searched company</span>
+  <span class="name">I receive information about the searched symbol</span>
   
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -2304,7 +2395,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </div>
 
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
@@ -2345,7 +2436,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   <span class="keyword indention">Given</span>
   <span class="name">I have an authorization token</span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -2381,14 +2472,14 @@ Expected: &quot;2019-09-03T09:30:00&quot;
   </div>
 
   
-  <span class="lead-duration duration">0.528</span>
+  <span class="lead-duration duration">0.646</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-48">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Search for symbols</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Obtain market information of a month</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2419,10 +2510,35 @@ Expected: &quot;2019-09-03T09:30:00&quot;
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call the symbol for q: <span class="argument">goog</span></span>
+  <span class="keyword indention">Given</span>
+  <span class="name">I want the calendar of <span class="argument">3</span> of <span class="argument">2019</span></span>
   
-  <span class="lead-duration duration">0.528</span>
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I call the calendar with the <span class="argument">3</span> of the <span class="argument">2019</span></span>
+  
+  <span class="lead-duration duration">0.644</span>
 
 </div>
 
@@ -2445,7 +2561,7 @@ Expected: &quot;2019-09-03T09:30:00&quot;
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I receive information about the searched symbol</span>
+  <span class="name">I receive information about the month status</span>
   
   <span class="lead-duration duration">0.000</span>
 

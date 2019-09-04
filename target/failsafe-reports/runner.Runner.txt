@@ -1,10 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 7.497 sec <<< FAILURE! - in runner.Runner
-runScenario(runner.Runner)  Time elapsed: 0.077 sec  <<< FAILURE!
+Tests run: 14, Failures: 5, Errors: 0, Skipped: 3, Time elapsed: 10.221 sec <<< FAILURE! - in runner.Runner
+runScenario(runner.Runner)  Time elapsed: 4.359 sec  <<< FAILURE!
 java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
 
-Expected: "2019-09-03T09:30:00"
-     but: was "2019-08-30T16:02:00"
+
+runScenario(runner.Runner)  Time elapsed: 4.36 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
+runScenario(runner.Runner)  Time elapsed: 1.943 sec  <<< FAILURE!
+java.lang.NullPointerException
 

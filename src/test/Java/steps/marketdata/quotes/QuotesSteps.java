@@ -3,6 +3,7 @@ package steps.marketdata.quotes;
 
 import cucumber.api.java.en.Given;
 import helpers.MapperHelper;
+import helpers.PropertiesHelper;
 import helpers.QuotesHelper;
 import cucumber.api.java.en.When;
 import entities.quotes.Quote;
@@ -10,6 +11,7 @@ import entities.quotes.QuotesResponse;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import steps.marketdata.BaseSteps;
 import utils.*;
 
 import java.util.HashMap;
@@ -17,7 +19,10 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class QuotesSteps {
+public class QuotesSteps extends BaseSteps {
+
+    private PropertiesHelper propertiesHelper = new PropertiesHelper();
+    private String marketQuotesPath = marketPath + propertiesHelper.getProperty("MARKET_QUOTES_PATH");
 
     @Given("In the market exist ([^\"]*)")
     public void inTheMarketExistSymbols(String symbols) {
@@ -28,9 +33,9 @@ public class QuotesSteps {
     @When("I call the quotes with ([^\"]*)")
     public void iCallTheQuotesWithSymbols(String symbols) {
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("markets/quotes")
+                .withBasePath(marketQuotesPath)
                 .withQueryParams("symbols", symbols).build();
-        Response response = ResponseBuilder.getResponse(request,"get");
+        Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"quotesResponse", QuotesResponse.class);
     }
 
@@ -42,11 +47,11 @@ public class QuotesSteps {
         HashMap<String, String> queryParams = new HashMap<>();
         queryParams.put("symbols", symbols);
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("markets/quotes")
+                .withBasePath(marketQuotesPath)
                 .withContentType(ContentType.URLENC)
                 .withContentParams(queryParams)
                 .build();
-        Response response = ResponseBuilder.getResponse(request,"post");
+        Response response = ResponseFactory.createResponse(request, "post");
         MapperHelper.setMapper(response,"quotesResponse", QuotesResponse.class);
     }
 

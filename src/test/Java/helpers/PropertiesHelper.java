@@ -7,20 +7,25 @@ import java.util.Properties;
 
 public class PropertiesHelper {
 
-    private static String token= null;
+    private String property = null;
 
-    public static String getToken() {
+    public  String getProperty(String propertyName) {
         try {
             InputStream fileInput = new FileInputStream("src/test/resources/config/config.properties");
             Properties properties = new Properties();
             properties.load(fileInput);
-            token = properties.getProperty("token");
+            property = properties.getProperty(propertyName);
             fileInput.close();
 
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        return token;
+        return property;
+    }
+
+    public  String getToken(){
+
+        return getProperty("token");
     }
 
 }

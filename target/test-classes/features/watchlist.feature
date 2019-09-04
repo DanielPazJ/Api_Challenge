@@ -17,6 +17,3 @@ Feature: Watchlist
     And  symbols: AAPL,IBM,NFLX
     Then I receive the new watchlist with symbols added
 
-  Scenario: Update an existing watchlist
-    Given The user has watchlist
-    When Ical the API 

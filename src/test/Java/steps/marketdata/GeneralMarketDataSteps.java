@@ -6,8 +6,9 @@ import utils.Share;
 
 public class GeneralMarketDataSteps {
 
+    private PropertiesHelper propertiesHelper = new PropertiesHelper();
     @Given("I have an authorization token")
     public void IHaveAnAuthorizationToken (){
-        Share.setShare("token",PropertiesHelper.getToken());
+        Share.setShare("token",propertiesHelper.getToken());
     }
 }

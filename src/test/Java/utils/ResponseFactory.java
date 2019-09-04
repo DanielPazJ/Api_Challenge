@@ -5,8 +5,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class ResponseFactory {
 
-    public  Response CreateResponse( RequestSpecification requestSpecification, String type){
-        Response response = null;
+    public static Response createResponse( RequestSpecification requestSpecification, String type){
+        Response response ;
         switch (type) {
             case "get":
                 response = ResponseCreator.createGetResponse(requestSpecification);

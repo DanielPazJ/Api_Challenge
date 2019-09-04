@@ -1,5 +1,6 @@
 package utils;
 
+import helpers.PropertiesHelper;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
@@ -11,8 +12,10 @@ public class RequestBuilder {
     private RequestSpecBuilder requestSpecBuilder  = new RequestSpecBuilder();
 
     public RequestBuilder(){
+        PropertiesHelper propertiesHelper = new PropertiesHelper();
+        String baseUri = propertiesHelper.getProperty("BASE_URI");
         this.requestSpecBuilder
-                .setBaseUri("https://sandbox.tradier.com/v1")
+                .setBaseUri(baseUri)
                 .setAccept(ContentType.JSON)
                 .addHeader("Authorization", "Bearer " + Share.getShare("token"));
     }

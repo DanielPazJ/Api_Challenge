@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100241400,
+              "duration": 197917700,
               "status": "passed"
             },
             "line": 5,
@@ -24,8 +24,8 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.501Z",
-        "line": 13,
+        "start_timestamp": "2019-09-04T14:47:07.390Z",
+        "line": 14,
         "name": "Obtain quotes of the Market",
         "description": "",
         "id": "market-data;obtain-quotes-of-the-market;;2",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1920300,
+              "duration": 139734100,
               "status": "passed"
             },
             "line": 8,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 4006518200,
+              "duration": 5950257300,
               "status": "passed"
             },
             "line": 9,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 37600,
+              "duration": 7837100,
               "status": "passed"
             },
             "line": 10,
@@ -91,7 +91,7 @@
         "steps": [
           {
             "result": {
-              "duration": 102426600,
+              "duration": 153795500,
               "status": "passed"
             },
             "line": 5,
@@ -104,87 +104,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.498Z",
-        "line": 14,
-        "name": "Obtain quotes of the Market",
-        "description": "",
-        "id": "market-data;obtain-quotes-of-the-market;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4402000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "In the market exist VXX",
-            "match": {
-              "arguments": [
-                {
-                  "val": "VXX",
-                  "offset": 20
-                }
-              ],
-              "location": "QuotesSteps.inTheMarketExistSymbols(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3967924200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I call the quotes with VXX",
-            "match": {
-              "arguments": [
-                {
-                  "val": "VXX",
-                  "offset": 23
-                }
-              ],
-              "location": "QuotesSteps.iCallTheQuotesWithSymbols(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 133000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I receive a list with only the called symbols",
-            "match": {
-              "location": "AssertQuotesSteps.iReceiveAListWithOnlyTheCalledSymbols()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 99015600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I have an authorization token",
-            "match": {
-              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-03T17:08:28.502Z",
+        "start_timestamp": "2019-09-04T14:47:07.433Z",
         "line": 16,
         "name": "Post quotes to the market",
         "description": "",
@@ -194,7 +114,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3995617300,
+              "duration": 6124897300,
               "status": "passed"
             },
             "line": 17,
@@ -212,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 37200,
+              "duration": 51900,
               "status": "passed"
             },
             "line": 18,
@@ -233,7 +153,7 @@
         "steps": [
           {
             "result": {
-              "duration": 99714200,
+              "duration": 75417700,
               "status": "passed"
             },
             "line": 5,
@@ -246,7 +166,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.501Z",
+        "start_timestamp": "2019-09-04T14:47:07.511Z",
         "line": 27,
         "name": "Obtain quotes with an option chain",
         "description": "",
@@ -256,11 +176,11 @@
         "steps": [
           {
             "result": {
-              "duration": 6036000,
+              "duration": 6519300,
               "status": "passed"
             },
             "line": 21,
-            "name": "I have an option chain of VXX with expiration date: 2019-09-13",
+            "name": "I have an option chain of VXX with expiration date: 2019-09-20",
             "match": {
               "arguments": [
                 {
@@ -268,7 +188,7 @@
                   "offset": 26
                 },
                 {
-                  "val": "2019-09-13",
+                  "val": "2019-09-20",
                   "offset": 52
                 }
               ],
@@ -278,11 +198,11 @@
           },
           {
             "result": {
-              "duration": 4034398100,
+              "duration": 6184988300,
               "status": "passed"
             },
             "line": 22,
-            "name": "I call quotes with symbol: VXX expiration date: 2019-09-13",
+            "name": "I call quotes with symbol: VXX expiration date: 2019-09-20",
             "match": {
               "arguments": [
                 {
@@ -290,7 +210,7 @@
                   "offset": 27
                 },
                 {
-                  "val": "2019-09-13",
+                  "val": "2019-09-20",
                   "offset": 48
                 }
               ],
@@ -300,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 75300,
+              "duration": 104500,
               "status": "passed"
             },
             "line": 23,
@@ -321,7 +241,7 @@
         "steps": [
           {
             "result": {
-              "duration": 101393500,
+              "duration": 84229200,
               "status": "passed"
             },
             "line": 5,
@@ -334,7 +254,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.499Z",
+        "start_timestamp": "2019-09-04T14:47:07.504Z",
         "line": 36,
         "name": "Obtain quotes of options strikes prices",
         "description": "",
@@ -344,7 +264,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2004100,
+              "duration": 6227900,
               "status": "passed"
             },
             "line": 30,
@@ -366,7 +286,7 @@
           },
           {
             "result": {
-              "duration": 4004982700,
+              "duration": 6097357100,
               "status": "passed"
             },
             "line": 31,
@@ -388,7 +308,7 @@
           },
           {
             "result": {
-              "duration": 58300,
+              "duration": 73000,
               "status": "passed"
             },
             "line": 32,
@@ -409,7 +329,7 @@
         "steps": [
           {
             "result": {
-              "duration": 108369000,
+              "duration": 114769600,
               "status": "passed"
             },
             "line": 5,
@@ -422,7 +342,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.492Z",
+        "start_timestamp": "2019-09-04T14:47:07.471Z",
         "line": 45,
         "name": "Obtain the expiration dates of an option",
         "description": "",
@@ -432,7 +352,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4312100,
+              "duration": 6815300,
               "status": "passed"
             },
             "line": 39,
@@ -454,7 +374,7 @@
           },
           {
             "result": {
-              "duration": 3958216400,
+              "duration": 6095834200,
               "status": "passed"
             },
             "line": 40,
@@ -472,7 +392,7 @@
           },
           {
             "result": {
-              "duration": 1359600,
+              "duration": 112900,
               "status": "passed"
             },
             "line": 41,
@@ -499,7 +419,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104220500,
+              "duration": 191692500,
               "status": "passed"
             },
             "line": 5,
@@ -512,26 +432,48 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.496Z",
-        "line": 47,
+        "start_timestamp": "2019-09-04T14:47:07.398Z",
+        "line": 54,
         "name": "Obtain historical pricing information",
         "description": "",
-        "id": "market-data;obtain-historical-pricing-information",
+        "id": "market-data;obtain-historical-pricing-information;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4041588200,
+              "duration": 3200800,
               "status": "passed"
             },
             "line": 48,
-            "name": "I call the historical with symbol: AC",
+            "name": "In the market there is a AC with a transaction on the date 2019-01-02",
             "match": {
               "arguments": [
                 {
                   "val": "AC",
-                  "offset": 35
+                  "offset": 25
+                },
+                {
+                  "val": "2019-01-02",
+                  "offset": 59
+                }
+              ],
+              "location": "HistorySteps.inTheMarketThereIsASymbolWithATransactionOnTheDateHistoricalDate(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6200444600,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I call the historical with AC",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AC",
+                  "offset": 27
                 }
               ],
               "location": "HistorySteps.ICallTheHistoricalWithSymbol(String)"
@@ -540,13 +482,19 @@
           },
           {
             "result": {
-              "duration": 104800,
+              "duration": 174900,
               "status": "passed"
             },
-            "line": 49,
-            "name": "I receive the historical pricing related to the symbol",
+            "line": 50,
+            "name": "I receive the historical pricing related to the AC",
             "match": {
-              "location": "AssertHistorySteps.iReceiveTheHistoricalPricingRelatedToTheSymbol()"
+              "arguments": [
+                {
+                  "val": "AC",
+                  "offset": 48
+                }
+              ],
+              "location": "AssertHistorySteps.iReceiveTheHistoricalPricingRelatedToTheSymbol(String)"
             },
             "keyword": "Then "
           }
@@ -561,7 +509,7 @@
         "steps": [
           {
             "result": {
-              "duration": 98536700,
+              "duration": 81777200,
               "status": "passed"
             },
             "line": 5,
@@ -574,20 +522,20 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.503Z",
-        "line": 51,
-        "name": "Obtain time sales information",
+        "start_timestamp": "2019-09-04T14:47:07.504Z",
+        "line": 56,
+        "name": "Obtain time sales information of a specific symbol",
         "description": "",
-        "id": "market-data;obtain-time-sales-information",
+        "id": "market-data;obtain-time-sales-information-of-a-specific-symbol",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4026870700,
+              "duration": 6140980000,
               "status": "passed"
             },
-            "line": 52,
+            "line": 57,
             "name": "I call the time sales with symbol: AC",
             "match": {
               "arguments": [
@@ -602,14 +550,13 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: \nExpected: \"2019-09-03T09:30:00\"\n     but: was \"2019-08-30T16:02:00\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)\r\n\tat steps.marketdata.timesales.AssertTimeSalesSteps.iReceiveTimeSalesInformationRelatedToTheSymbol(AssertTimeSalesSteps.java:18)\r\n\tat ✽.I receive time sales information related to the symbol(file:src/test/resources/features/marketdata.feature:53)\r\n",
-              "duration": 2122900,
-              "status": "failed"
+              "duration": 80344500,
+              "status": "passed"
             },
-            "line": 53,
-            "name": "I receive time sales information related to the symbol",
+            "line": 58,
+            "name": "I receive time sales information of the current day related to the symbol",
             "match": {
-              "location": "AssertTimeSalesSteps.iReceiveTimeSalesInformationRelatedToTheSymbol()"
+              "location": "AssertTimeSalesSteps.iReceiveTimeSalesInformationOfTheCurrentDatRelatedToTheSymbol()"
             },
             "keyword": "Then "
           }
@@ -624,7 +571,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100734800,
+              "duration": 140110400,
               "status": "passed"
             },
             "line": 5,
@@ -637,8 +584,8 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.500Z",
-        "line": 55,
+        "start_timestamp": "2019-09-04T14:47:07.449Z",
+        "line": 60,
         "name": "Obtain intraday status",
         "description": "",
         "id": "market-data;obtain-intraday-status",
@@ -647,10 +594,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3985808800,
+              "duration": 6055916900,
               "status": "passed"
             },
-            "line": 56,
+            "line": 61,
             "name": "I call the clock",
             "match": {
               "location": "ClockSteps.ICallTheClock()"
@@ -659,10 +606,10 @@
           },
           {
             "result": {
-              "duration": 70100,
+              "duration": 165361000,
               "status": "passed"
             },
-            "line": 57,
+            "line": 62,
             "name": "I receive information about the current day status",
             "match": {
               "location": "AssertClockSteps.iReceiveInformationAboutTheCurrentDayStatus()"
@@ -680,7 +627,7 @@
         "steps": [
           {
             "result": {
-              "duration": 26751000,
+              "duration": 198690800,
               "status": "passed"
             },
             "line": 5,
@@ -693,79 +640,38 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:28.574Z",
-        "line": 59,
-        "name": "Obtain market information of a month",
+        "start_timestamp": "2019-09-04T14:47:07.389Z",
+        "line": 71,
+        "name": "Obtain information of a company",
         "description": "",
-        "id": "market-data;obtain-market-information-of-a-month",
+        "id": "market-data;obtain-information-of-a-company;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 204000,
+              "duration": 3513500,
               "status": "passed"
             },
-            "line": 60,
-            "name": "I call the calendar with month: 08",
+            "line": 65,
+            "name": "There exist content related to alphabet",
             "match": {
               "arguments": [
                 {
-                  "val": "08",
-                  "offset": 32
+                  "val": "alphabet",
+                  "offset": 31
                 }
               ],
-              "location": "CalendarSteps.ICallTheCalendarWithMonth(String)"
+              "location": "SearchSteps.thereExistContentRelatedToKeyword(String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
-            },
-            "line": 61,
-            "name": "I receive information about the month status",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 300300,
+              "duration": 6082918500,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I have an authorization token",
-            "match": {
-              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-03T17:08:28.610Z",
-        "line": 63,
-        "name": "Obtain information of a company",
-        "description": "",
-        "id": "market-data;obtain-information-of-a-company",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4041397600,
-              "status": "passed"
-            },
-            "line": 64,
+            "line": 66,
             "name": "I call a query for q: alphabet",
             "match": {
               "arguments": [
@@ -780,10 +686,10 @@
           },
           {
             "result": {
-              "duration": 2039100,
+              "duration": 11724500,
               "status": "passed"
             },
-            "line": 65,
+            "line": 67,
             "name": "I receive information of the searched company",
             "match": {
               "location": "AssertSearchSteps.iReceiveInformationOfTheSearchedCompany()"
@@ -801,7 +707,7 @@
         "steps": [
           {
             "result": {
-              "duration": 325500,
+              "duration": 79619200,
               "status": "passed"
             },
             "line": 5,
@@ -814,20 +720,38 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:32.567Z",
-        "line": 67,
+        "start_timestamp": "2019-09-04T14:47:07.508Z",
+        "line": 80,
         "name": "Search for symbols",
         "description": "",
-        "id": "market-data;search-for-symbols",
+        "id": "market-data;search-for-symbols;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 528230100,
+              "duration": 3665200,
               "status": "passed"
             },
-            "line": 68,
+            "line": 74,
+            "name": "There are symbols related with goog",
+            "match": {
+              "arguments": [
+                {
+                  "val": "goog",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchSteps.thereAreSymbolsRelatedWithKeyword(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6118705400,
+              "status": "passed"
+            },
+            "line": 75,
             "name": "I call the symbol for q: goog",
             "match": {
               "arguments": [
@@ -842,13 +766,101 @@
           },
           {
             "result": {
-              "duration": 87900,
+              "duration": 98000,
               "status": "passed"
             },
-            "line": 69,
+            "line": 76,
             "name": "I receive information about the searched symbol",
             "match": {
               "location": "AssertSearchSteps.iReceiveInformationAboutTheSearchedSymbol()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 563200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an authorization token",
+            "match": {
+              "location": "GeneralMarketDataSteps.IHaveAnAuthorizationToken()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-04T14:47:13.691Z",
+        "line": 89,
+        "name": "Obtain market information of a month",
+        "description": "",
+        "id": "market-data;obtain-market-information-of-a-month;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3319900,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I want the calendar of 3 of 2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 23
+                },
+                {
+                  "val": "2019",
+                  "offset": 28
+                }
+              ],
+              "location": "CalendarSteps.iWantTheCalendarOfMonthOfYear(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 458285800,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I call the calendar with the 3 of the 2019",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 29
+                },
+                {
+                  "val": "2019",
+                  "offset": 38
+                }
+              ],
+              "location": "CalendarSteps.iCallTheCalendarWithTheMonthOfTheYear(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138300,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I receive information about the month status",
+            "match": {
+              "location": "AssertCalendarSteps.iReceiveInformationAboutTheMonthStatus()"
             },
             "keyword": "Then "
           }
@@ -866,7 +878,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-03T17:08:32.575Z",
+        "start_timestamp": "2019-09-04T14:47:13.759Z",
         "line": 4,
         "name": "Obtain watchlist of a user",
         "description": "",
@@ -904,7 +916,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:32.577Z",
+        "start_timestamp": "2019-09-04T14:47:13.747Z",
         "line": 9,
         "name": "Obtain a specific watchlist of a user",
         "description": "",
@@ -942,7 +954,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-03T17:08:32.577Z",
+        "start_timestamp": "2019-09-04T14:47:13.767Z",
         "line": 14,
         "name": "Create a new watchlist",
         "description": "",
@@ -985,35 +997,6 @@
             "name": "I receive the new watchlist with symbols added",
             "match": {},
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-03T17:08:32.577Z",
-        "line": 20,
-        "name": "Update an existing watchlist",
-        "description": "",
-        "id": "watchlist;update-an-existing-watchlist",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "The user has watchlist",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 22,
-            "name": "Ical the API",
-            "match": {},
-            "keyword": "When "
           }
         ]
       }
