@@ -11,8 +11,5 @@ public class ClockResponse {
     public Clock getClock() {
         return clock;
     }
-    public void setClock(Clock clock) {
-        this.clock = clock;
-    }
 }
 

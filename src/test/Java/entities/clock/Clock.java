@@ -17,14 +17,6 @@ public class Clock {
     @JsonProperty("next_state")
     private String nextState;
 
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
     public String getDate() {
         return date;
     }

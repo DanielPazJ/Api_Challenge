@@ -2,7 +2,7 @@ package entities.calendar;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Hours {
+class Hours {
 
     @JsonProperty("start")
     private String start;

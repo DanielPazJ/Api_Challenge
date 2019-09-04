@@ -1,7 +1,6 @@
 package entities.options;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import entities.quotes.Quote;
 
 import java.util.List;
 
