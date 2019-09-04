@@ -1,6 +1,6 @@
 package steps.marketdata.search;
 
-import cucumber.api.java.en.Then;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import entities.securities.SecuritiesResponse;
 import entities.securities.Security;
@@ -12,11 +12,16 @@ import utils.ResponseBuilder;
 import utils.Share;
 
 public class SearchSteps {
+
+    @Given("There exist content related to ([^\"]*)")
+    public void thereExistContentRelatedToKeyword(String keyword) {
+        Security security = new Security();
+        security.setDescription(keyword);
+        Share.setShare("security",security);
+    }
+
     @When("I call a query for q: ([^\"]*)")
     public void ICallAQueryForQ (String q){
-        Security security = new Security();
-        security.setDescription(q);
-        Share.setShare("security",security);
         RequestSpecification request = new RequestBuilder()
                 .withBasePath("markets/search")
                 .withQueryParams("q", q).build();
@@ -24,11 +29,15 @@ public class SearchSteps {
         MapperHelper.setMapper(response,"securityResponse", SecuritiesResponse.class);
     }
 
+    @Given("There are symbols related with ([^\"]*)")
+    public void thereAreSymbolsRelatedWithKeyword(String keyword) {
+        Security security = new Security();
+        security.setSymbol(keyword);
+        Share.setShare("symbol",security);
+    }
+
     @When("I call the symbol for q: ([^\"]*)")
     public void ICallTheSymbolForQ (String q){
-        Security security = new Security();
-        security.setSymbol(q);
-        Share.setShare("symbol",security);
         RequestSpecification request = new RequestBuilder()
                 .withBasePath("markets/lookup")
                 .withQueryParams("q", q).build();

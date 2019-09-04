@@ -32,7 +32,7 @@ public class RequestBuilder {
         return this;
     }
 
-    public RequestBuilder withQueryParams (String key,String content){
+    public RequestBuilder withQueryParams (String key, String content){
         this.requestSpecBuilder.addQueryParam(key,content);
         return this;
     }

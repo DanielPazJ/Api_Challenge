@@ -5,10 +5,9 @@ import entities.historicalDates.Day;
 
 public class HistoryDatesHelper {
 
-    public Day createOptionExpiration(){
+    public Day createOptionExpiration(String date){
         Day day = new Day();
-        String dayContent = "2019-01-02";
-        day.setDate(dayContent);
+        day.setDate(date);
         return day;
     }
 }

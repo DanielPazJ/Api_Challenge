@@ -24,4 +24,9 @@ public class Clock {
     public void setState(String state) {
         this.state = state;
     }
+
+    public String getDate() {
+        return date;
+    }
+
 }

@@ -1,7 +1,6 @@
 package steps.marketdata.options;
 
 import cucumber.api.java.en.Then;
-import entities.expirations.Date;
 import entities.expirations.Expirations;
 import entities.options.Option;
 import entities.options.OptionsResponse;
@@ -19,7 +18,6 @@ public class AssertOptionsSteps {
     public void iReceiveQuotesRelatedToTheSymbolWithTheExpirationDateOnly() {
         Option options = Share.getShare("options");
         List<Option> optionResponse = ((OptionsResponse)Share.getShare("optionsResponse")).getOptions().getOption();
-
         assertThat(options.getRootSymbol(), equalTo(optionResponse.get(0).getRootSymbol()));
         assertThat(options.getExpirationDate(), equalTo(optionResponse.get(0).getExpirationDate()));
 

@@ -14,8 +14,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import utils.*;
 
-import java.util.HashMap;
-
 public class OptionsSteps {
 
     @Given("I have an option chain of ([^\"]*) with expiration date: ([^\"]*)")

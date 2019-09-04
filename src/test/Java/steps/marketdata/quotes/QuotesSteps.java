@@ -2,7 +2,6 @@ package steps.marketdata.quotes;
 
 
 import cucumber.api.java.en.Given;
-import gherkin.ast.DataTable;
 import helpers.MapperHelper;
 import helpers.QuotesHelper;
 import cucumber.api.java.en.When;
