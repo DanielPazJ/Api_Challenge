@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2461b80-35ad-4418-a307-4758b064e3c7" name="Default Changelist" comment="" />
+    <list default="true" id="b2461b80-35ad-4418-a307-4758b064e3c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/watchlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/watchlist.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/calendar/Calendar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/calendar/CalendarDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/calendar/CalendarResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/calendar/Day.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/calendar/Hours.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/clock/Clock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/clock/ClockResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/expirations/Date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/expirations/Expirations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/historicalDates/Day.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/historicalDates/History.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/historicalDates/HistoryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/options/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/options/Options.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/options/OptionsResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/quotes/Quote.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/quotes/Quotes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/quotes/QuotesResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/securities/Securities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/securities/SecuritiesResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/securities/Security.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/strikes/Strike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/strikes/Strikes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/timeSales/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/timeSales/Series.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/entities/timeSales/TimeSalesResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/CalendarHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/DatesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/HistoryDatesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/MapperHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/OptionsHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/PropertiesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/QuotesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/TimesSalesHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/ParallelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/GeneralMarketDataSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/calendar/AssertCalendarSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/calendar/CalendarSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/clock/AssertClockSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/clock/ClockSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/history/AssertHistorySteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/history/HistorySteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/options/AssertOptionsSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/options/OptionsSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/quotes/AssertQuotesSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/quotes/QuotesSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/search/AssertSearchSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/search/SearchSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/timesales/AssertTimeSalesSteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/marketdata/timesales/TimeSalesSteps.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,64 +73,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/Calendar.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/CalendarDay.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/steps/watchlist/WatchlistSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/Quote.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/Quotes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/QuotesResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/CalendarResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/Day.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="440">
+              <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +94,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/Hours.java">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/WatchlistHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/WatchlistResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -93,17 +117,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="221">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlists.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/ItemContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/AssertQuotesSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,12 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/CompaniesSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/lookup/LookupSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/entities/securities/Security.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/AssertSearchSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/helpers/QuotesHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/helpers/OptionsHelper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/helpers/HistoryDatesHelper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/entities/calendar/DayCalendar.java" />
         <option value="$PROJECT_DIR$/src/test/Java/entities/calendar/ResultCalendar.java" />
@@ -157,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/test/Java/utils/ResponseFactory.java" />
         <option value="$PROJECT_DIR$/src/test/Java/helpers/DatesHelper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/timesales/AssertTimeSalesSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/watchlist.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/marketdata.feature" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/BaseSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config/config.properties" />
@@ -169,7 +208,6 @@
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/history/HistorySteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/options/OptionsSteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/GeneralMarketDataSteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/utils/RequestBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/timesales/TimeSalesSteps.java" />
@@ -181,8 +219,16 @@
         <option value="$PROJECT_DIR$/src/test/Java/entities/calendar/CalendarDay.java" />
         <option value="$PROJECT_DIR$/src/test/Java/entities/calendar/Day.java" />
         <option value="$PROJECT_DIR$/src/test/Java/entities/calendar/Hours.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/entities/watchlist/WatchlistResponse.java" />
         <option value="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlists.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/entities/watchlist/ItemContent.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/entities/watchlist/Item.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/MyStepdefs.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/helpers/WatchlistHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/watchlist.feature" />
+        <option value="$PROJECT_DIR$/src/test/Java/steps/watchlist/WatchlistSteps.java" />
       </list>
     </option>
   </component>
@@ -205,10 +251,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="127" />
-    <option name="width" value="1440" />
-    <option name="height" value="765" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -263,24 +309,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="timeSales" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
               <item name="watchlist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
@@ -297,6 +326,34 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="steps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
+              <item name="marketdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
+              <item name="marketdata" type="462c0819:PsiDirectoryNode" />
+              <item name="quotes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
+              <item name="watchlist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
@@ -342,36 +399,39 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/Java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java" />
-      <recent name="C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\Java\entities" />
-      <recent name="C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\Java\entities\clock" />
-      <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java\entities\timeSales" />
-      <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java\entities\historicalDates" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="entities.options" />
-      <recent name="utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java\entities" />
       <recent name="C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\resoruces\config" />
       <recent name="C:\Users\dpaz\OneDrive - ENDAVA\Desktop\Api_Challenge\src\test\resoruces\features" />
       <recent name="C:\Users\DanielSantiago\IdeaProjects\APIChallenge\src\test\resources" />
       <recent name="C:\Users\DanielSantiago\IdeaProjects\APIChallenge\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="steps" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entities.options" />
+      <recent name="utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java\entities\watchlist" />
+      <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java" />
+      <recent name="C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\Java\entities" />
+      <recent name="C:\Users\dpaz\OneDrive - ENDAVA\Desktop\API 2.0\Api_Challenge\src\test\Java\entities\clock" />
+      <recent name="C:\Users\DanielSantiago\Desktop\Api_Challenge\src\test\Java\entities\timeSales" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -543,10 +603,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24696356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -603,65 +663,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/options/AssertOptionsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="116" selection-start-line="20" selection-start-column="116" selection-end-line="20" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/search/AssertSearchSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/history/AssertHistorySteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/ReponseCreator/ResponseFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/Java/utils/Share.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/AssertQuotesSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/MapperHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/utils/ResponseBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/DatesHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/timesales/AssertTimeSalesSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -758,23 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/GeneralMarketDataSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -802,31 +786,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/BaseSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/BaseSteps.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/marketdata.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -914,27 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/Quote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/Quotes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/QuotesResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/Calendar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -945,7 +888,21 @@
     <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/CalendarDay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/Quote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/Quotes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -958,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/Day.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="68">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -969,21 +926,137 @@
     <entry file="file://$PROJECT_DIR$/src/test/Java/entities/calendar/Hours.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlists.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="204">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/quotes/QuotesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/MyStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/marketdata.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="49" column="36" lean-forward="true" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/search/SearchSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/WatchlistResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/Watchlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/TimesSalesHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/WatchlistHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/entities/watchlist/ItemContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/QuotesHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/QuotesSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/quotes/AssertQuotesSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/steps/watchlist/WatchlistSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

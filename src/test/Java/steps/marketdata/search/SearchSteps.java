@@ -1,6 +1,8 @@
 package steps.marketdata.search;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import entities.securities.SecuritiesResponse;
 import entities.securities.Security;
@@ -29,7 +31,7 @@ public class SearchSteps extends BaseSteps {
     @When("I call a query for q: ([^\"]*)")
     public void ICallAQueryForQ (String q){
         RequestSpecification request = new RequestBuilder()
-                .withBasePath(marketPath+marketSearch)
+                .withBasePath(marketPath + marketSearch)
                 .withQueryParams("q", q).build();
         Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"securityResponse", SecuritiesResponse.class);
@@ -45,7 +47,7 @@ public class SearchSteps extends BaseSteps {
     @When("I call the symbol for q: ([^\"]*)")
     public void ICallTheSymbolForQ (String q){
         RequestSpecification request = new RequestBuilder()
-                .withBasePath(marketPath+marketLookup)
+                .withBasePath(marketPath + marketLookup)
                 .withQueryParams("q", q).build();
         Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"symbolResponse", SecuritiesResponse.class);

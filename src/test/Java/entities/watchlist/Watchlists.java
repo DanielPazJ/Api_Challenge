@@ -8,4 +8,12 @@ public class Watchlists {
 
     @JsonProperty("watchlist")
     private List<Watchlist> watchlistList;
+
+    public List<Watchlist> getWatchlistList() {
+        return watchlistList;
+    }
+
+    public void setWatchlistList(List<Watchlist> watchlistList) {
+        this.watchlistList = watchlistList;
+    }
 }
