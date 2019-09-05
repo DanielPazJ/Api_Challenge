@@ -17,12 +17,8 @@ public class AssertWatchlistSteps {
 
     @Then("I receive a list of watchlist that has the user watchlist names")
     public void iReceiveAListOfWatchlistThatHasTheUserWatchlistNames() {
-        Watchlist watchlist = Share.getShare("watchlist");
-        List<Watchlist> watchlistResponse = ((WatchlistResponse)Share.getShare("watchlistResponse"))
-                .getWatchlists().getWatchlistList();
-        for (Watchlist value : watchlistResponse) {
-            assertThat(watchlist.getName(), equalTo(value.getName()));
-        }
+        assertThat(watchlistHelper.validateWatchlistHasName("watchlist",
+                "watchlistResponse"),is(true));
     }
 
     @Then("I receive the watchlist by id with the correct name")

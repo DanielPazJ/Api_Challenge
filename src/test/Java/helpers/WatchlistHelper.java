@@ -4,6 +4,7 @@ import entities.quotes.Quote;
 import entities.watchlist.Item;
 import entities.watchlist.ItemContent;
 import entities.watchlist.Watchlist;
+import entities.watchlist.WatchlistResponse;
 import utils.Share;
 
 import java.util.ArrayList;
@@ -68,6 +69,22 @@ public class WatchlistHelper {
                 validInformation = true;
             }
         }
+        return validInformation;
+    }
+
+    public boolean validateWatchlistHasName(String watchlistKey, String watchlistResponseKey) {
+
+        Watchlist watchlist = Share.getShare(watchlistKey);
+        List<Watchlist> watchlistResponse = ((WatchlistResponse)Share.getShare(watchlistResponseKey))
+                .getWatchlists().getWatchlistList();
+
+        boolean validInformation = false;
+        for (Watchlist value : watchlistResponse) {
+            if(watchlist.getName().equals(value.getName()))
+                validInformation = true;
+        }
+
+
         return validInformation;
     }
 }
