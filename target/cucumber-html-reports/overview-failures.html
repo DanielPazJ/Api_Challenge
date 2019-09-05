@@ -78,7 +78,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>API Automation Report</td>
               <td>1</td>
-            <td>05 Sep 2019, 04:54</td>
+            <td>05 Sep 2019, 09:04</td>
     </tr>
   </tbody>
 </table>
@@ -118,7 +118,7 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2311840801.html">Market data</a>
+      <a href="report-feature_1_1931424832.html">Watchlist</a>
     </div>
   
   
@@ -126,14 +126,14 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">16.480</span>
+  <span class="lead-duration duration">0.472</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Obtain time sales information of a specific symbol</span>
+  <span class="name">Obtain all watchlist of a user</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -164,134 +164,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I call the time sales with symbol: <span class="argument">AC</span></span>
-  
-  <span class="lead-duration duration">16.368</span>
-
-</div>
-
-        
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I receive time sales information of the current day related to the symbol</span>
-  
-  <span class="lead-duration duration">0.111</span>
-
-</div>
-
-        
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: 
-Expected: is &lt;true&gt;
-     but: was &lt;false&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at steps.marketdata.timesales.AssertTimeSalesSteps.iReceiveTimeSalesInformationOfTheCurrentDatRelatedToTheSymbol(AssertTimeSalesSteps.java:21)
-	at &#10045;.I receive time sales information of the current day related to the symbol(file:src/test/resources/features/marketdata.feature:58)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-      <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_1931424832.html">Watchlist</a>
-    </div>
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">0.583</span>
-
-
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
-    
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Obtain all watchlist of a user</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-4" class="collapse collapsable-details  in ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
-    
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
-          <div class="step">
-        
-<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have a watchlist with name: <span class="argument">default</span></span>
   
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -316,7 +192,7 @@ Expected: is &lt;true&gt;
   <span class="keyword indention">When</span>
   <span class="name">I call the API with watchlist</span>
   
-  <span class="lead-duration duration">0.580</span>
+  <span class="lead-duration duration">0.459</span>
 
 </div>
 
@@ -326,10 +202,10 @@ Expected: is &lt;true&gt;
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
+      <div id="msg-3" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;401&gt;.
 
@@ -344,7 +220,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -355,7 +231,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -436,10 +312,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </div>
 
   
-  <span class="lead-duration duration">0.568</span>
+  <span class="lead-duration duration">0.442</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -452,13 +328,13 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -470,14 +346,14 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I have a watchlist with id: <span class="argument">default</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -502,7 +378,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   <span class="keyword indention">When</span>
   <span class="name">I call the watchlist id: <span class="argument">default</span></span>
   
-  <span class="lead-duration duration">0.567</span>
+  <span class="lead-duration duration">0.441</span>
 
 </div>
 
@@ -512,10 +388,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details  in ">
+      <div id="msg-6" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;401&gt;.
 
@@ -528,7 +404,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -539,7 +415,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -620,10 +496,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </div>
 
   
-  <span class="lead-duration duration">0.715</span>
+  <span class="lead-duration duration">0.563</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -636,13 +512,13 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details  in ">
+  <div id="element-7" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -654,14 +530,14 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I want to create a new watchlist with name: <span class="argument">MyWatchlist</span> that has symbol: <span class="argument">AAPL</span></span>
   
-  <span class="lead-duration duration">0.048</span>
+  <span class="lead-duration duration">0.123</span>
 
 </div>
 
@@ -686,7 +562,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   <span class="keyword indention">When</span>
   <span class="name">I call the API with watchlist name: <span class="argument">MyWatchlist</span> symbol: <span class="argument">AAPL</span></span>
   
-  <span class="lead-duration duration">0.666</span>
+  <span class="lead-duration duration">0.440</span>
 
 </div>
 
@@ -696,10 +572,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
+      <div id="msg-9" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;401&gt;.
 
@@ -712,10 +588,9 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
@@ -723,12 +598,11 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor182.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
@@ -804,10 +678,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </div>
 
   
-  <span class="lead-duration duration">0.780</span>
+  <span class="lead-duration duration">0.563</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -820,13 +694,13 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-13" class="collapse collapsable-details  in ">
+  <div id="element-10" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -838,14 +712,14 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I want to change name of a watchlist to <span class="argument">UpdatedWatchlist</span></span>
   
-  <span class="lead-duration duration">0.106</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -870,7 +744,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   <span class="keyword indention">When</span>
   <span class="name">I call the API with the watchlist id: <span class="argument">default</span> and the updated name <span class="argument">UpdatedWatchlist</span></span>
   
-  <span class="lead-duration duration">0.673</span>
+  <span class="lead-duration duration">0.562</span>
 
 </div>
 
@@ -880,10 +754,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-15" class="collapse collapsable-details  in ">
+      <div id="msg-12" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;401&gt;.
 
@@ -896,9 +770,9 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
-	at sun.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
@@ -906,11 +780,11 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at sun.reflect.GeneratedMethodAccessor174.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor182.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
@@ -986,10 +860,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </div>
 
   
-  <span class="lead-duration duration">0.641</span>
+  <span class="lead-duration duration">0.443</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1002,13 +876,13 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1020,14 +894,14 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I want to delete the watchlist with the id: <span class="argument">MyWatchlist</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1052,7 +926,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   <span class="keyword indention">When</span>
   <span class="name">I call the API with watchlist id: <span class="argument">MyWatchlist</span></span>
   
-  <span class="lead-duration duration">0.639</span>
+  <span class="lead-duration duration">0.443</span>
 
 </div>
 
@@ -1062,10 +936,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
+      <div id="msg-15" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;401&gt;.
 
@@ -1078,7 +952,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1089,7 +963,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -1170,10 +1044,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </div>
 
   
-  <span class="lead-duration duration">0.702</span>
+  <span class="lead-duration duration">0.536</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1186,13 +1060,13 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-16" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1204,14 +1078,14 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I want to add the symbol <span class="argument">NFLX</span> to a watchlist with name: <span class="argument">MyWatchlist</span></span>
   
-  <span class="lead-duration duration">0.026</span>
+  <span class="lead-duration duration">0.080</span>
 
 </div>
 
@@ -1236,7 +1110,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   <span class="keyword indention">When</span>
   <span class="name">I call the API by watchlist id: <span class="argument">default</span> and symbol: <span class="argument">NFLX</span></span>
   
-  <span class="lead-duration duration">0.675</span>
+  <span class="lead-duration duration">0.456</span>
 
 </div>
 
@@ -1246,10 +1120,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-21" class="collapse collapsable-details  in ">
+      <div id="msg-18" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;401&gt;.
 
@@ -1262,7 +1136,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1273,7 +1147,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -1354,10 +1228,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </div>
 
   
-  <span class="lead-duration duration">0.648</span>
+  <span class="lead-duration duration">0.520</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1370,13 +1244,13 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-22" class="collapse collapsable-details  in ">
+  <div id="element-19" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1388,14 +1262,14 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I want to remove the <span class="argument">NFLX</span> symbol from the watchlist with name: <span class="argument">MyWatchlist</span></span>
   
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.067</span>
 
 </div>
 
@@ -1420,7 +1294,7 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
   <span class="keyword indention">When</span>
   <span class="name">I call the API to delete the watchlist by watchlist id: <span class="argument">default</span> and symbol: <span class="argument">NFLX</span></span>
   
-  <span class="lead-duration duration">0.647</span>
+  <span class="lead-duration duration">0.452</span>
 
 </div>
 
@@ -1430,10 +1304,10 @@ Expected status code &lt;200&gt; but was &lt;401&gt;.
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
           <a>java.lang.AssertionError:</a>
       </div>
-      <div id="msg-24" class="collapse collapsable-details  in ">
+      <div id="msg-21" class="collapse collapsable-details  in ">
         <pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;404&gt;.
 
@@ -1446,7 +1320,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1457,7 +1331,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-	at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)

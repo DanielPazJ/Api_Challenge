@@ -30,6 +30,7 @@ entities\securities\Securities.class
 steps\marketdata\options\AssertOptionsSteps.class
 entities\timeSales\TimeSalesResponse.class
 entities\options\Options.class
+helpers\SearchHelper.class
 entities\calendar\Day.class
 entities\watchlist\Item.class
 steps\marketdata\common\GeneralMarketDataSteps.class
@@ -41,7 +42,6 @@ steps\marketdata\timesales\TimeSalesSteps.class
 steps\marketdata\BaseSteps.class
 helpers\QuotesHelper.class
 steps\marketdata\quotes\AssertQuotesSteps.class
-helpers\TimesSalesHelper.class
 steps\watchlist\WatchlistSteps.class
 entities\expirations\Expirations.class
 entities\historicalDates\HistoryResponse.class

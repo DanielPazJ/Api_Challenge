@@ -51,4 +51,23 @@ public class WatchlistHelper {
 
         return containsSymbol;
     }
+
+    public boolean validateInformationOf(String validateType) {
+
+        Watchlist watchlist = Share.getShare("watchlist");
+        Watchlist watchlistResponse = Share.getShare("watchlistResponse");
+
+        boolean validInformation = false;
+
+        if (validateType.equals("id")) {
+            if (watchlist.getId().equals(watchlistResponse.getId())){
+                validInformation = true;
+            }
+        }else if (validateType.equals("name")) {
+            if (watchlist.getName().equals(watchlistResponse.getName())){
+                validInformation = true;
+            }
+        }
+        return validInformation;
+    }
 }

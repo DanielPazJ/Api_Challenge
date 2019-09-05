@@ -41,7 +41,7 @@ public class SearchSteps extends BaseSteps {
     public void thereAreSymbolsRelatedWithKeyword(String keyword) {
         Security security = new Security();
         security.setSymbol(keyword);
-        Share.setShare("symbol",security);
+        Share.setShare("security",security);
     }
 
     @When("I call the symbol for q: ([^\"]*)")
@@ -50,7 +50,7 @@ public class SearchSteps extends BaseSteps {
                 .withBasePath(marketPath + marketLookup)
                 .withQueryParams("q", q).build();
         Response response = ResponseFactory.createResponse(request, "get");
-        MapperHelper.setMapper(response,"symbolResponse", SecuritiesResponse.class);
+        MapperHelper.setMapper(response,"securityResponse", SecuritiesResponse.class);
     }
 
 }

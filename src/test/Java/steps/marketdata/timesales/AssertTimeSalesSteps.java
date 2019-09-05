@@ -16,7 +16,6 @@ public class AssertTimeSalesSteps {
     public void iReceiveTimeSalesInformationOfTheCurrentDatRelatedToTheSymbol() {
         DatesHelper datesHelper = new DatesHelper();
         List<Data> timeSalesResponse = ((TimeSalesResponse) Share.getShare("timeSalesResponse")).getSeries().getData();
-
         for (Data data : timeSalesResponse) {
             assertThat(datesHelper.dateIsEqual(datesHelper.dateFormatter(data.getTime())), is(true));
         }

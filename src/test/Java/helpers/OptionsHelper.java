@@ -1,9 +1,11 @@
 package helpers;
 
 import entities.expirations.Date;
+import entities.expirations.Expirations;
 import entities.options.Option;
 import entities.options.OptionsResponse;
 import entities.strikes.Strike;
+import entities.strikes.Strikes;
 import utils.Share;
 
 import java.util.List;
@@ -35,12 +37,8 @@ public class OptionsHelper {
     }
 
     public boolean verifyQuotesContainsExpirationDateOnly(String optionsKey, String optionsResponseKey) {
-
         Option options = Share.getShare(optionsKey);
         List<Option> optionResponse = ((OptionsResponse) Share.getShare(optionsResponseKey)).getOptions().getOption();
-        assertThat(options.getRootSymbol(), equalTo(optionResponse.get(0).getRootSymbol()));
-        assertThat(options.getExpirationDate(), equalTo(optionResponse.get(0).getExpirationDate()));
-
         boolean containsRootSymbol = false;
         boolean containsExpirationDate = false;
         for (Option option : optionResponse) {
@@ -49,7 +47,6 @@ public class OptionsHelper {
                 containsRootSymbol = true;
             }
         }
-
         if (containsRootSymbol = true) {
             for (Option option : optionResponse) {
                 if (option.getExpirationDate()
@@ -57,8 +54,36 @@ public class OptionsHelper {
                     containsExpirationDate = true;
                 }
             }
-
         }
         return containsExpirationDate;
     }
+
+    public boolean verifyStrikesContainsExpirationDateOnly(String strikeKey, String strikesResponseKey) {
+        Strike strike = Share.getShare(strikeKey);
+        Double[] strikeResponse = ((Strikes)Share.getShare(strikesResponseKey)).getStrikes().getStrike();
+        boolean containsExpirationDate = false;
+        for (Double aDouble : strikeResponse) {
+            if (strike.getStrike()[0].equals(aDouble)) {
+                containsExpirationDate = true;
+            }
+        }
+        return containsExpirationDate;
+
+    }
+
+    public boolean verifyContainsExpirationDate(String expirationDate,String expirationsResponseKey) {
+        String[] expirationDateResponse = ((Expirations)Share.getShare(expirationsResponseKey))
+                .getDates().getExpirations();
+        assertThat(expirationDate,equalTo(expirationDateResponse[0]));
+        boolean containsExpirationDate = false;
+        for (String aString : expirationDateResponse) {
+            if (expirationDate.equals(aString)) {
+                containsExpirationDate = true;
+            }
+        }
+        return containsExpirationDate;
+
+    }
+
+
 }

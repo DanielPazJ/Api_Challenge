@@ -38,7 +38,7 @@ Feature: Market data
   Scenario Outline: Obtain the expiration dates of an option
     Given The <symbol> exist in the market with <expiration date>
     When I call the options expiration with <symbol>
-    Then I receive expiration dates with <expiration date>
+    Then I receive expiration dates including <expiration date>
 
     Examples:
       | symbol  | expiration date |

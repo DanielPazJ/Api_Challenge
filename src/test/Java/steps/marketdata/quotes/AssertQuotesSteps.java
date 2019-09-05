@@ -12,10 +12,8 @@ public class AssertQuotesSteps {
 
     @Then("I receive a list with only the called symbols")
     public void iReceiveAListWithOnlyTheCalledSymbols() {
-
         List<Quote> quotes= Share.getShare("quotes");
         List<Quote> quoteResponse = ((QuotesResponse)Share.getShare("quotesResponse")).getQuotes().getQuote();
-
         for (int i =0; i<quotes.size();i++)
             assertThat(quotes.get(i).getSymbol(), equalTo(quoteResponse.get(i).getSymbol()));
     }

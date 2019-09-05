@@ -1,36 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="8" ignored="0" total="18" passed="10">
+<testng-results skipped="0" failed="7" ignored="0" total="18" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="19610" started-at="2019-09-05T09:54:02Z" finished-at="2019-09-05T09:54:22Z">
+  <suite name="Surefire suite" duration-ms="6639" started-at="2019-09-05T14:04:01Z" finished-at="2019-09-05T14:04:08Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="19610" started-at="2019-09-05T09:54:02Z" finished-at="2019-09-05T09:54:22Z">
+    <test name="Surefire test" duration-ms="6639" started-at="2019-09-05T14:04:01Z" finished-at="2019-09-05T14:04:08Z">
       <class name="runner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@1324409e]" name="setUpClass" is-config="true" duration-ms="275" started-at="2019-09-05T09:54:02Z" finished-at="2019-09-05T09:54:03Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@6b2fad11]" name="setUpClass" is-config="true" duration-ms="300" started-at="2019-09-05T14:04:01Z" finished-at="2019-09-05T14:04:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="18685" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Obtain quotes of the Market"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Market data"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17714" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5145" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -46,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17815" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5261" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +46,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17799" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5152" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Obtain quotes of the Market"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Market data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5160" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17768" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5151" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -94,56 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17805" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Obtain information of a company"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Market data"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17931" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Obtain time sales information of a specific symbol"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Market data"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[
-Expected: is <true>
-     but: was <false>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: is <true>
-     but: was <false>
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:18)
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-at steps.marketdata.timesales.AssertTimeSalesSteps.iReceiveTimeSalesInformationOfTheCurrentDatRelatedToTheSymbol(AssertTimeSalesSteps.java:21)
-at ✽.I receive time sales information of the current day related to the symbol(file:src/test/resources/features/marketdata.feature:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17742" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5209" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -159,7 +110,23 @@ at ✽.I receive time sales information of the current day related to the symbol
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17921" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5258" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Obtain time sales information of a specific symbol"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Market data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5258" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -175,7 +142,23 @@ at ✽.I receive time sales information of the current day related to the symbol
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="17768" started-at="2019-09-05T09:54:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5145" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Obtain information of a company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Market data"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="5151" started-at="2019-09-05T14:04:01Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -191,7 +174,7 @@ at ✽.I receive time sales information of the current day related to the symbol
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="620" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="450" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -207,7 +190,7 @@ at ✽.I receive time sales information of the current day related to the symbol
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="580" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="475" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -241,7 +224,7 @@ at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(Cal
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -252,7 +235,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -277,7 +260,7 @@ at ✽.I call the API with watchlist(file:src/test/resources/features/watchlist.
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="582" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="476" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -309,7 +292,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -320,7 +303,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -345,7 +328,7 @@ at ✽.I call the watchlist id: default(file:src/test/resources/features/watchli
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="718" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="564" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -377,10 +360,9 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
@@ -388,12 +370,11 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.GeneratedMethodAccessor182.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
@@ -413,7 +394,7 @@ at ✽.I call the API with watchlist name: MyWatchlist symbol: AAPL(file:src/tes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="789" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="564" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -445,9 +426,9 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
-at sun.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor183.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
@@ -455,11 +436,11 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-at sun.reflect.GeneratedMethodAccessor174.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor182.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
@@ -479,7 +460,7 @@ at ✽.I call the API with the watchlist id: default and the updated name Update
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="651" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="444" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -511,7 +492,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -522,7 +503,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -547,7 +528,7 @@ at ✽.I call the API with watchlist id: MyWatchlist(file:src/test/resources/fea
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="721" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="536" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -579,7 +560,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -590,7 +571,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -615,7 +596,7 @@ at ✽.I call the API by watchlist id: default and symbol: NFLX(file:src/test/re
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@1324409e]" name="runScenario" duration-ms="648" started-at="2019-09-05T09:54:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T09:54:21Z">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6b2fad11]" name="runScenario" duration-ms="521" started-at="2019-09-05T14:04:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-09-05T14:04:07Z">
           <params>
             <param index="0">
               <value>
@@ -647,7 +628,7 @@ at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedCo
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:492)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$4.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$9.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -658,7 +639,7 @@ at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteN
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)
-at io.restassured.specification.ResponseSpecification$statusCode$9.callCurrent(Unknown Source)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
 at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
@@ -683,7 +664,7 @@ at ✽.I call the API to delete the watchlist by watchlist id: default and symbo
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@1324409e]" name="tearDownClass" is-config="true" duration-ms="445" started-at="2019-09-05T09:54:22Z" finished-at="2019-09-05T09:54:22Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@6b2fad11]" name="tearDownClass" is-config="true" duration-ms="316" started-at="2019-09-05T14:04:07Z" finished-at="2019-09-05T14:04:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

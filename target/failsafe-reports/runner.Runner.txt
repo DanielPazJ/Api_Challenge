@@ -1,14 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 23.646 sec <<< FAILURE! - in runner.Runner
-runScenario(runner.Runner)  Time elapsed: 0.095 sec  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: is <true>
-     but: was <false>
-
-runScenario(runner.Runner)  Time elapsed: 0.413 sec  <<< FAILURE!
+Tests run: 18, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 11.368 sec <<< FAILURE! - in runner.Runner
+runScenario(runner.Runner)  Time elapsed: 0.339 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <401>.
@@ -20,31 +14,31 @@ java.lang.AssertionError:
 Expected status code <200> but was <401>.
 
 
-runScenario(runner.Runner)  Time elapsed: 0.527 sec  <<< FAILURE!
+runScenario(runner.Runner)  Time elapsed: 0.444 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <401>.
 
 
-runScenario(runner.Runner)  Time elapsed: 0.578 sec  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> but was <401>.
-
-
-runScenario(runner.Runner)  Time elapsed: 0.597 sec  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> but was <401>.
-
-
-runScenario(runner.Runner)  Time elapsed: 0.64 sec  <<< FAILURE!
+runScenario(runner.Runner)  Time elapsed: 0.511 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <404>.
 
 
-runScenario(runner.Runner)  Time elapsed: 0.649 sec  <<< FAILURE!
+runScenario(runner.Runner)  Time elapsed: 0.524 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0.533 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0.533 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <401>.
