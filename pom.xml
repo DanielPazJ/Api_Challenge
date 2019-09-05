@@ -79,7 +79,7 @@
                             <includes>
                                 <include>**/Runner.java</include>
                             </includes>
-                            <parallel>methods</parallel>
+                            <parallel>method</parallel>
                             <threadCount>5</threadCount>
                             <perCoreThreadCount>true</perCoreThreadCount>
                         </configuration>
