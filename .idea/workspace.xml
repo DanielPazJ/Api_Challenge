@@ -4,30 +4,6 @@
     <list default="true" id="b2461b80-35ad-4418-a307-4758b064e3c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/APIChallenge-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/APIChallenge-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_1931424832.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_1_1931424832.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_2311840801.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_2311840801.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/Surefire suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/Surefire suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-runner.Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/TEST-runner.Runner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/junitreports/TEST-runner.Runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/junitreports/TEST-runner.Runner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/old/Surefire suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/runner.Runner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/runner.Runner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/failsafe-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsonReports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsonReports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/watchlist/AssertWatchlistSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/watchlist/AssertWatchlistSteps.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179">
-              <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
+            <state relative-caret-position="314">
+              <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -55,7 +31,16 @@
         <entry file="file://$PROJECT_DIR$/src/test/Java/runner/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="66" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="66" />
+              <caret line="6" column="53" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/runner/ParallelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -65,15 +50,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/steps/marketdata/calendar/CalendarSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -114,9 +90,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -197,9 +177,9 @@
         <option value="$PROJECT_DIR$/src/test/Java/helpers/SearchHelper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/helpers/WatchlistHelper.java" />
         <option value="$PROJECT_DIR$/src/test/Java/steps/watchlist/AssertWatchlistSteps.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/features/marketdata.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/watchlist.feature" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -258,15 +238,20 @@
               <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Api_Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Api_Challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -593,13 +578,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/TimesSalesHelper.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/Java/runner/ParallelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/helpers/DatesHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-89">
@@ -868,20 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/runner/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="66" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/marketdata.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -890,7 +854,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/watchlist.feature">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/runner/ParallelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/runner/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
