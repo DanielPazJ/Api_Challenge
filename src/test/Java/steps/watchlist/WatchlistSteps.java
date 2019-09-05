@@ -1,13 +1,11 @@
 package steps.watchlist;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-
 import entities.watchlist.Watchlist;
-import entities.watchlist.WatchlistResponse;
 import entities.watchlist.Watchlists;
 import helpers.MapperHelper;
+import helpers.PropertiesHelper;
 import helpers.WatchlistHelper;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -15,15 +13,15 @@ import io.restassured.specification.RequestSpecification;
 import utils.RequestBuilder;
 import utils.ResponseFactory;
 import utils.Share;
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class WatchlistSteps {
 
-    @Given("The user has a watchlist with name: ([^\"]*)")
-    public void theUserHasAWatchlistWithName(String watchlistName) {
+    private PropertiesHelper propertiesHelper = new PropertiesHelper();
+    private String watchlistPath = propertiesHelper.getProperty("WATCHLIST_PATH");
+    private String watchlistSymbolsPath = propertiesHelper.getProperty("WATCHLIST_SYMBOLS_PATH");
+
+    @Given("I have a watchlist with name: ([^\"]*)")
+    public void iHaveAWatchlistWithName(String watchlistName) {
         Watchlist watchlist = new Watchlist();
         watchlist.setName(watchlistName);
         Share.setShare("watchlist",watchlist);
@@ -32,24 +30,14 @@ public class WatchlistSteps {
     @When("I call the API with watchlist")
     public void iCallTheAPIWithWatchlist() {
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("/watchlists")
+                .withBasePath(watchlistPath)
                 .build();
         Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
     }
 
-    @Then("I receive a list of watchlist that has the user watchlist names")
-    public void iReceiveAListOfWatchlistThatHasTheUserWatchlistNames() {
-        Watchlist watchlist = Share.getShare("watchlist");
-        List<Watchlist> watchlistResponse = ((WatchlistResponse)Share.getShare("watchlistResponse"))
-                .getWatchlists().getWatchlistList();
-        for (Watchlist value : watchlistResponse) {
-            assertThat(watchlist.getName(), equalTo(value.getName()));
-        }
-    }
-
-    @Given("The user has a watchlist with id: ([^\"]*)")
-    public void theUserHasAWatchlistWithId(String watchlistId) {
+    @Given("I have a watchlist with id: ([^\"]*)")
+    public void iHaveAWatchlistWithId(String watchlistId) {
         Watchlist watchlist = new Watchlist();
         watchlist.setId(watchlistId);
         Share.setShare("watchlist",watchlist);
@@ -59,18 +47,11 @@ public class WatchlistSteps {
     @When("I call the watchlist id: ([^\"]*)")
     public void iCallTheWatchlistId(String watchlistId) {
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("/watchlists{"+watchlistId+"}")
+                .withBasePath(watchlistPath + "/" + watchlistId)
+                .withQueryParams("watchlist_id",watchlistId)
                 .build();
         Response response = ResponseFactory.createResponse(request, "get");
         MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
-    }
-
-    @Then("I receive the watchlist by id with the correct name")
-    public void iReceiveTheWatchlistByIdWithTheCorrectName() {
-        Watchlist watchlist = Share.getShare("watchlist");
-        Watchlist watchlistResponse = Share.getShare("watchlistResponse");
-        assertThat(watchlist.getId(), equalTo(watchlistResponse.getId()));
-
     }
 
     @Given("I want to create a new watchlist with name: ([^\"]*) that has symbol: ([^\"]*)")
@@ -81,29 +62,16 @@ public class WatchlistSteps {
 
     }
 
-    @When("I call the API  with watchlist name: ([^\"]*) symbol: ([^\"]*)")
+    @When("I call the API with watchlist name: ([^\"]*) symbol: ([^\"]*)")
     public void iCallTheAPIWithWatchlistNameSymbols(String watchlistName, String symbol) {
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("/watchlists")
+                .withBasePath(watchlistPath)
                 .withContentType(ContentType.URLENC)
                 .withQueryParams("name",watchlistName)
                 .withQueryParams("symbols",symbol)
                 .build();
         Response response = ResponseFactory.createResponse(request, "post");
         MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
-    }
-
-    @Then("I receive the new watchlist with symbols added")
-    public void iReceiveTheNewWatchlistWithSymbolsAdded() {
-        Watchlist watchlist = Share.getShare("watchlist");
-        Watchlist watchlistResponse = Share.getShare("watchlistResponse");
-
-        assertThat(watchlist.getName(), equalTo(watchlistResponse.getName()));
-
-        for (int i =0; i<watchlist.getItemContent().getItems().size();i++) {
-            assertThat(watchlist.getItemContent().getItems().get(i),
-                    equalTo(watchlistResponse.getItemContent().getItems().get(i)));
-        }
     }
 
     @Given("I want to change name of a watchlist to ([^\"]*)")
@@ -113,22 +81,71 @@ public class WatchlistSteps {
         Share.setShare("watchlist",watchlist);
     }
 
-    @When("I send a request with the watchlist id: ([^\"]*) and the updated name ([^\"]*)")
-    public void iSendARequestWithTheWatchlistIdAndTheUpdatedName(String watchlistId, String watchlistName) {
+    @When("I call the API with the watchlist id: ([^\"]*) and the updated name ([^\"]*)")
+    public void iCallTheAPIWithTheWatchlistIdAndTheUpdatedName(String watchlistId, String watchlistName) {
         RequestSpecification request = new RequestBuilder()
-                .withBasePath("/watchlists{"+watchlistId+"}")
+                .withBasePath(watchlistPath + "/" + watchlistId)
                 .withContentType(ContentType.URLENC)
-                .withQueryParams("watchlist_name",watchlistId)
+                .withQueryParams("watchlist_id",watchlistId)
                 .withQueryParams("name",watchlistName)
                 .build();
         Response response = ResponseFactory.createResponse(request, "put");
         MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
     }
 
-    @Then("I get the watchlist with the updated information")
-    public void iGetTheWatchlistWithTheUpdatedInformation() {
-        Watchlist watchlist = Share.getShare("watchlist");
-        Watchlist watchlistResponse = Share.getShare("watchlistResponse");
-        assertThat(watchlist.getName(), equalTo(watchlistResponse.getName()));
+    @Given("I want to delete the watchlist with the id: ([^\"]*)")
+    public void iWantToDeleteTheWatchlistWithTheId(String watchlistId) {
+        Watchlist watchlist = new Watchlist();
+        watchlist.setId(watchlistId);
+        Share.setShare("watchlist",watchlist);
     }
+
+    @When("I call the API with watchlist id: ([^\"]*)")
+    public void iCallTheAPIWithWatchlistId(String watchlistId) {
+        RequestSpecification request = new RequestBuilder()
+                .withBasePath(watchlistPath + "/" + watchlistId)
+                .withQueryParams("watchlist_id",watchlistId)
+                .build();
+        Response response = ResponseFactory.createResponse(request, "delete");
+        MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
+    }
+
+    @Given("I want to add the symbol ([^\"]*) to a watchlist with name: ([^\"]*)")
+    public void iWantToAddTheSymbolToAWatchlistWithName(String symbol, String watchlistName) {
+        WatchlistHelper watchlistHelper = new WatchlistHelper();
+        Watchlist watchlist = watchlistHelper.getWatchlistWithSymbol(watchlistName,symbol);
+        Share.setShare("watchlist",watchlist);
+    }
+
+    @When("I call the API by watchlist id: ([^\"]*) and symbol: ([^\"]*)")
+    public void iCallTheAPIByWatchlistIdAndSymbol(String watchlistId, String symbol) {
+        RequestSpecification request = new RequestBuilder()
+                .withBasePath(watchlistPath + "/" + watchlistId + watchlistSymbolsPath)
+                .withContentType(ContentType.URLENC)
+                .withQueryParams("watchlist_id",watchlistId)
+                .withQueryParams("symbols",symbol)
+                .build();
+        Response response = ResponseFactory.createResponse(request, "post");
+        MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
+    }
+
+
+    @Given("I want to remove the ([^\"]*) symbol from the watchlist with name: ([^\"]*)")
+    public void iWantToRemoveTheSymbolFromTheWatchlistWithName(String symbol, String watchlistName) {
+        WatchlistHelper watchlistHelper = new WatchlistHelper();
+        Watchlist watchlist = watchlistHelper.getWatchlistWithSymbol(watchlistName,symbol);
+        Share.setShare("watchlist",watchlist);
+    }
+
+    @When("I call the API to delete the watchlist by watchlist id: ([^\"]*) and symbol: ([^\"]*)")
+    public void iCallTheAPIToDeleteTheWatchlistByWatchlistIdAndSymbol(String watchlistId, String symbol) {
+        RequestSpecification request = new RequestBuilder()
+                .withBasePath(watchlistPath + "/" + watchlistId + watchlistSymbolsPath + "/" + symbol)
+                .withQueryParams("watchlist_id",watchlistId)
+                .withQueryParams("symbols",symbol)
+                .build();
+        Response response = ResponseFactory.createResponse(request, "post");
+        MapperHelper.setMapper(response,"watchlistResponse", Watchlists.class);
+    }
+
 }

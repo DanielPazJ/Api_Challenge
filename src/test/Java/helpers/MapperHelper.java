@@ -15,7 +15,6 @@ public class MapperHelper {
     public static void setMapper(Response response, String key, Class type) {
         try {
             mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
-            String x =response.getBody().asString();
             Share.setShare(key,mapper.readValue(response.getBody().asString(), type));
         } catch (IOException e) {
             e.printStackTrace();

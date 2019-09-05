@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ClockResponse {
 
-
     @JsonProperty("clock")
     private Clock clock;
 

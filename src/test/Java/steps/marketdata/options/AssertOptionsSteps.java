@@ -6,6 +6,7 @@ import entities.options.Option;
 import entities.options.OptionsResponse;
 import entities.strikes.Strike;
 import entities.strikes.Strikes;
+import helpers.OptionsHelper;
 import utils.Share;
 
 import java.util.List;
@@ -16,10 +17,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class AssertOptionsSteps {
     @Then("I receive quotes related to the symbol with the expiration date only")
     public void iReceiveQuotesRelatedToTheSymbolWithTheExpirationDateOnly() {
-        Option options = Share.getShare("options");
-        List<Option> optionResponse = ((OptionsResponse)Share.getShare("optionsResponse")).getOptions().getOption();
-        assertThat(options.getRootSymbol(), equalTo(optionResponse.get(0).getRootSymbol()));
-        assertThat(options.getExpirationDate(), equalTo(optionResponse.get(0).getExpirationDate()));
+//        Option options = Share.getShare("options");
+//        List<Option> optionResponse = ((OptionsResponse)Share.getShare("optionsResponse")).getOptions().getOption();
+//        assertThat(options.getRootSymbol(), equalTo(optionResponse.get(0).getRootSymbol()));
+//        assertThat(options.getExpirationDate(), equalTo(optionResponse.get(0).getExpirationDate()));
+        OptionsHelper optionsHelper = new OptionsHelper();
+        assertThat(optionsHelper.verifyQuotesContainsExpirationDateOnly("options","optionsResponse"),equalTo(true));
 
     }
 
@@ -32,9 +35,7 @@ public class AssertOptionsSteps {
 
     @Then("I receive expiration dates with ([^\"]*)")
     public void iReceiveExpirationDates(String expirationDate) {
- //       Date expirationDate = Share.getShare("expiration");
         String[] expirationDateResponse = ((Expirations)Share.getShare("expirationsResponse")).getDates().getExpirations();
-//        assertThat(expirationDate.getExpirations()[0], equalTo(expirationDateResponse[0]));
         assertThat(expirationDate,equalTo(expirationDateResponse[0]));
     }
 }

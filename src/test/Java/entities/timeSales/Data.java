@@ -3,6 +3,7 @@ package entities.timeSales;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Data {
+
     @JsonProperty("time")
     private String time;
     @JsonProperty("timestamp")

@@ -1,31 +1,52 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 5, Errors: 0, Skipped: 3, Time elapsed: 10.221 sec <<< FAILURE! - in runner.Runner
-runScenario(runner.Runner)  Time elapsed: 4.359 sec  <<< FAILURE!
+Tests run: 18, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 23.646 sec <<< FAILURE! - in runner.Runner
+runScenario(runner.Runner)  Time elapsed: 0.095 sec  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is <true>
+     but: was <false>
+
+runScenario(runner.Runner)  Time elapsed: 0.413 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
-Expected status code <200> but was <400>.
+Expected status code <200> but was <401>.
 
 
-runScenario(runner.Runner)  Time elapsed: 4.36 sec  <<< FAILURE!
+runScenario(runner.Runner)  Time elapsed: 0.413 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0.527 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0.578 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0.597 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+runScenario(runner.Runner)  Time elapsed: 0.64 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <200> but was <404>.
 
 
-runScenario(runner.Runner)  Time elapsed: 0 sec  <<< FAILURE!
+runScenario(runner.Runner)  Time elapsed: 0.649 sec  <<< FAILURE!
 java.lang.AssertionError: 
 1 expectation failed.
-Expected status code <200> but was <404>.
+Expected status code <200> but was <401>.
 
-
-runScenario(runner.Runner)  Time elapsed: 0 sec  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> but was <404>.
-
-
-runScenario(runner.Runner)  Time elapsed: 1.943 sec  <<< FAILURE!
-java.lang.NullPointerException
 

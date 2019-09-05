@@ -47,7 +47,7 @@ Feature: Market data
   Scenario Outline: Obtain historical pricing information
     Given In the market there is a <symbol> with a transaction on the date <historical date>
     When I call the historical with <symbol>
-    Then I receive the historical pricing related to the <symbol>
+    Then I receive the historical pricing related to the symbol
 
     Examples:
       | symbol | historical date |
